@@ -12,6 +12,7 @@
 #ifndef _INC_UARCH_MEMORY_CACHEMODEL_H_
 #define _INC_UARCH_MEMORY_CACHEMODEL_H_
 
+#include <cstdio>
 #include "util/Counter.h"
 #include "api/types.h"
 
@@ -56,6 +57,8 @@ private:
   
   uint32**              tags;
   
+  uint32                countWay;
+  uint32                countSet;
   uint32                hit_way;
   uint32                hit_set;
   uint32                valid_match;
@@ -172,42 +175,23 @@ public:
   }
 
   
-  inline uint16 read (uint32 addr, uint8 blk_bits, uint32 pc)
+inline uint16 read (uint32 addr, uint8 blk_bits, uint32 pc)
   {
     uint16 latency = 0;
+    fprintf(stdout,"drowsy");
     if(level==2 && ((cycle_count->get_value()) -(windowsPassed*windowSize))>windowSize){
-        //DROWSY
         windowsPassed++;
-        tags[hit_way][hit_set] |= DROWSY_BIT;
-    if (!is_hit(addr)) {    /* CACHE MISS */
-      ++read_misses;
-      bool success;
-      latency = read_lat[blk_bits] + replace_block (addr, block_bits, pc, false, success) + 1;
-      // -----------------------------------------------------------------------
-      // Profiling counters
-      //
-      if (is_cache_miss_frequency_recording_enabled   // Cache miss per PC profiling counter
-          && miss_freq_hist                     //
-          && pc != kInvalidProgramCount) {
-        miss_freq_hist->inc(pc);
-      }      
-      if (is_cache_miss_cycle_recording_enabled  // Cache miss cycles per PC profiling counter
-          && miss_cycles_hist                   //
-          && pc != kInvalidProgramCount) {
-        miss_cycles_hist->inc(pc, latency);
-      }
-    } else {                /* CACHE HIT */
-      ++read_hits;
-      latency = read_lat[blk_bits] + 1;
+        //set drowsy bit on all lines
+        for (countWay = 0; countWay < ways; ++countWay){
+            for (countSet = 0; countSet < sets; ++countSet){
+                tags[countWay][countSet] |= DROWSY_BIT;
+            }
+        }
     }
-    return latency;
-  }
-  else{ 
-      //Not Drowsy
       if (!is_hit(addr)) {    // CACHE MISS 
       ++read_misses;
       bool success;
-      latency = read_lat[blk_bits] + replace_block (addr, block_bits, pc, false, success); //ADD 2 FOR DROWSY WAKE
+      latency = read_lat[blk_bits] + replace_block (addr, block_bits, pc, false, success); 
       // -----------------------------------------------------------------------
       // Profiling counters
       //
@@ -223,49 +207,22 @@ public:
       }
     } else {                // CACHE HIT
       ++read_hits;
-      latency = read_lat[blk_bits]; //ADD 2 FOR DROWSY WAKE
+      latency = read_lat[blk_bits]; 
     }
     return latency;
-  }
   }
   
-  inline uint16 write (uint32 addr, uint8 blk_bits, uint32 pc)
+inline uint16 write (uint32 addr, uint8 blk_bits, uint32 pc)
   {
     uint16 latency = 0;
-    if(level==2 && ((cycle_count->get_value()) -(windowsPassed*windowSize))<windowSize){
-    //DROWSY
-    tags[hit_way][hit_set] |= DROWSY_BIT;
-    if (!is_hit(addr)) {    /* CACHE MISS */
-      ++write_misses;
-      bool success;
-      latency = write_lat[blk_bits] + replace_block (addr, block_bits, pc, true, success) +1;
-      
-      // -----------------------------------------------------------------------
-      // Profiling counters
-      //
-      if (is_cache_miss_frequency_recording_enabled   // Cache miss per PC profiling counter
-          && miss_freq_hist                     //
-          && pc != kInvalidProgramCount) {
-        miss_freq_hist->inc(pc);
-      }      
-      if (is_cache_miss_cycle_recording_enabled  // Cache miss cycles per PC profiling counter
-          && miss_cycles_hist                   //
-          && pc != kInvalidProgramCount) {
-        miss_cycles_hist->inc(pc, latency);
-      }
-      //
-      //
-      //------------------------------------------------------------------------
-    
-    } else {                /* CACHE HIT */
-      ++write_hits;
-      tags[hit_way][hit_set] |= DIRTY_BIT;
-      latency = write_lat[blk_bits] + 1;
+    if(level==2 && ((cycle_count->get_value()) -(windowsPassed*windowSize))>windowSize){
+        windowsPassed++;
+        for (countWay = 0; countWay < ways; ++countWay){
+            for (countSet = 0; countSet < sets; ++countSet){
+                tags[countWay][countSet] |= DROWSY_BIT;
+            }
+        }
     }
-    return latency;
-  }
-    else{
-        //NOT DROWSY
         if (!is_hit(addr)) {    /* CACHE MISS */
       ++write_misses;
       bool success;
@@ -295,7 +252,6 @@ public:
     }
     return latency;
     }
-  }
   
 //end of header 
 };
