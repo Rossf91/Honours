@@ -182,7 +182,7 @@ public:
     if (!is_hit(addr)) {    /* CACHE MISS */
       ++read_misses;
       bool success;
-      latency = read_lat[blk_bits] + replace_block (addr, block_bits, pc, false, success);
+      latency = read_lat[blk_bits] + replace_block (addr, block_bits, pc, false, success) + 1;
       // -----------------------------------------------------------------------
       // Profiling counters
       //
@@ -198,7 +198,7 @@ public:
       }
     } else {                /* CACHE HIT */
       ++read_hits;
-      latency = read_lat[blk_bits];
+      latency = read_lat[blk_bits] + 1;
     }
     return latency;
   }
@@ -207,7 +207,7 @@ public:
       if (!is_hit(addr)) {    // CACHE MISS 
       ++read_misses;
       bool success;
-      latency = read_lat[blk_bits] + 2 + replace_block (addr, block_bits, pc, false, success); //ADD 2 FOR DROWSY WAKE
+      latency = read_lat[blk_bits] + replace_block (addr, block_bits, pc, false, success); //ADD 2 FOR DROWSY WAKE
       // -----------------------------------------------------------------------
       // Profiling counters
       //
@@ -223,7 +223,7 @@ public:
       }
     } else {                // CACHE HIT
       ++read_hits;
-      latency = read_lat[blk_bits] + 2; //ADD 2 FOR DROWSY WAKE
+      latency = read_lat[blk_bits]; //ADD 2 FOR DROWSY WAKE
     }
     return latency;
   }
@@ -260,7 +260,7 @@ public:
     } else {                /* CACHE HIT */
       ++write_hits;
       tags[hit_way][hit_set] |= DIRTY_BIT;
-      latency = write_lat[blk_bits];
+      latency = write_lat[blk_bits] + 1;
     }
     return latency;
   }
@@ -269,7 +269,7 @@ public:
         if (!is_hit(addr)) {    /* CACHE MISS */
       ++write_misses;
       bool success;
-      latency = write_lat[blk_bits] + replace_block (addr, block_bits, pc, true, success) + 2;
+      latency = write_lat[blk_bits] + replace_block (addr, block_bits, pc, true, success);
       
       // -----------------------------------------------------------------------
       // Profiling counters
@@ -291,7 +291,7 @@ public:
     } else {                /* CACHE HIT */
       ++write_hits;
       tags[hit_way][hit_set] |= DIRTY_BIT;
-      latency = write_lat[blk_bits] +2;
+      latency = write_lat[blk_bits];
     }
     return latency;
     }
