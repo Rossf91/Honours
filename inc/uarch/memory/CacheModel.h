@@ -61,7 +61,6 @@ private:
   uint32                valid_match;
   uint32                victim_way;
   uint32                victim_rotate;
-  uint32                windowsPassed;
   
   CacheModel*           next_level; // pointer to cache model further up in hierarchy
   MainMemoryModel*      ext_mem;
@@ -86,7 +85,7 @@ public:
   uint32    block_bits;
   uint16    read_lat  [MAX_BLK_BITS+1];
   uint16    write_lat [MAX_BLK_BITS+1];
-
+  uint64                windowsPassed;
 
   MemoryModel*          memory_model;
 
@@ -176,8 +175,9 @@ public:
   inline uint16 read (uint32 addr, uint8 blk_bits, uint32 pc)
   {
     uint16 latency = 0;
-    if(level==2 && ((cycle_count->get_value()) -(windowsPassed*windowSize))<windowSize){
+    if(level==2 && ((cycle_count->get_value()) -(windowsPassed*windowSize))>windowSize){
         //DROWSY
+        windowsPassed++;
         tags[hit_way][hit_set] |= DROWSY_BIT;
     if (!is_hit(addr)) {    /* CACHE MISS */
       ++read_misses;
