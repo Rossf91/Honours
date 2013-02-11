@@ -230,10 +230,12 @@ public:
   inline uint16 write (uint32 addr, uint8 blk_bits, uint32 pc)
   {
     uint16 latency = 0;
+    if(level==2 && ((cycle_count->get_value()) -(windowsPassed*windowSize))<windowSize){
     if (!is_hit(addr)) {    /* CACHE MISS */
       ++write_misses;
       bool success;
       latency = write_lat[blk_bits] + replace_block (addr, block_bits, pc, true, success);
+      
       // -----------------------------------------------------------------------
       // Profiling counters
       //
@@ -247,14 +249,49 @@ public:
           && pc != kInvalidProgramCount) {
         miss_cycles_hist->inc(pc, latency);
       }
+      //
+      //
+      //------------------------------------------------------------------------
+    
     } else {                /* CACHE HIT */
       ++write_hits;
       tags[hit_way][hit_set] |= DIRTY_BIT;
       latency = write_lat[blk_bits];
     }
     return latency;
-  }  
-
+  }
+    else{
+        if (!is_hit(addr)) {    /* CACHE MISS */
+      ++write_misses;
+      bool success;
+      latency = write_lat[blk_bits] + replace_block (addr, block_bits, pc, true, success) + 2;
+      
+      // -----------------------------------------------------------------------
+      // Profiling counters
+      //
+      if (is_cache_miss_frequency_recording_enabled   // Cache miss per PC profiling counter
+          && miss_freq_hist                     //
+          && pc != kInvalidProgramCount) {
+        miss_freq_hist->inc(pc);
+      }      
+      if (is_cache_miss_cycle_recording_enabled  // Cache miss cycles per PC profiling counter
+          && miss_cycles_hist                   //
+          && pc != kInvalidProgramCount) {
+        miss_cycles_hist->inc(pc, latency);
+      }
+      //
+      //
+      //------------------------------------------------------------------------
+    
+    } else {                /* CACHE HIT */
+      ++write_hits;
+      tags[hit_way][hit_set] |= DIRTY_BIT;
+      latency = write_lat[blk_bits] +2;
+    }
+    return latency;
+    }
+  }
+  
+//end of header 
 };
-
 #endif  // _INC_UARCH_MEMORY_CACHEMODEL_H_
