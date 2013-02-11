@@ -177,6 +177,8 @@ public:
   {
     uint16 latency = 0;
     if(level==2 && ((cycle_count->get_value()) -(windowsPassed*windowSize))<windowSize){
+        //DROWSY
+        tags[hit_way][hit_set] |= DROWSY_BIT;
     if (!is_hit(addr)) {    /* CACHE MISS */
       ++read_misses;
       bool success;
@@ -200,8 +202,8 @@ public:
     }
     return latency;
   }
-  else{ //Cache is drowsy!
-      tags[hit_way][hit_set] |= DROWSY_BIT;
+  else{ 
+      //Not Drowsy
       if (!is_hit(addr)) {    // CACHE MISS 
       ++read_misses;
       bool success;
@@ -231,10 +233,12 @@ public:
   {
     uint16 latency = 0;
     if(level==2 && ((cycle_count->get_value()) -(windowsPassed*windowSize))<windowSize){
+    //DROWSY
+    tags[hit_way][hit_set] |= DROWSY_BIT;
     if (!is_hit(addr)) {    /* CACHE MISS */
       ++write_misses;
       bool success;
-      latency = write_lat[blk_bits] + replace_block (addr, block_bits, pc, true, success);
+      latency = write_lat[blk_bits] + replace_block (addr, block_bits, pc, true, success) +1;
       
       // -----------------------------------------------------------------------
       // Profiling counters
@@ -261,6 +265,7 @@ public:
     return latency;
   }
     else{
+        //NOT DROWSY
         if (!is_hit(addr)) {    /* CACHE MISS */
       ++write_misses;
       bool success;
