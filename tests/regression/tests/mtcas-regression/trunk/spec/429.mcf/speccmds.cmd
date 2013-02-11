@@ -1,0 +1,2 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/429.mcf/run/run_base_test_arcsim.0000
+-o inp.out -e inp.err  ../run_base_test_arcsim.0000/mcf_base.arcsim -- inp.in

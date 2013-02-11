@@ -1,0 +1,3 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/450.soplex/run/run_base_ref_arcsim.0000
+-o pds-50.mps.out -e pds-50.mps.stderr  ../run_base_ref_arcsim.0000/soplex_base.arcsim -- -s1 -e -m45000 pds-50.mps
+-o ref.out -e ref.stderr  ../run_base_ref_arcsim.0000/soplex_base.arcsim -- -m3500 ref.mps

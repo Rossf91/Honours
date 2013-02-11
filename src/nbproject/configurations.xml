@@ -1,0 +1,794 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="84">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df name="src" root=".">
+      <df name="api">
+        <df name="arc">
+          <in>api_arcint.cpp</in>
+          <in>prof_count.cpp</in>
+        </df>
+        <df name="ioc">
+          <in>api_ioc.cpp</in>
+        </df>
+        <df name="ipt">
+          <in>api_ipt.cpp</in>
+        </df>
+        <df name="irq">
+          <in>api_irq.cpp</in>
+        </df>
+        <df name="mem">
+          <in>api_mem.cpp</in>
+        </df>
+        <df name="prof">
+          <in>api_prof.cpp</in>
+        </df>
+        <in>api_funs.cpp</in>
+      </df>
+      <df name="arch">
+        <in>CacheArch.cpp</in>
+        <in>Configuration.cpp</in>
+        <in>IsaOptions.cpp</in>
+        <in>MmuArch.cpp</in>
+        <in>PageArch.cpp</in>
+        <in>SimOptions.cpp</in>
+        <in>SpadArch.cpp</in>
+      </df>
+      <df name="concurrent">
+        <in>ConditionVariable.cpp</in>
+        <in>Mutex.cpp</in>
+        <in>Thread.cpp</in>
+      </df>
+      <df name="ioc">
+        <in>Context.cpp</in>
+        <in>ContextItemId.cpp</in>
+        <in>ContextItemInterface.cpp</in>
+        <in>ContextItemInterfaceFactory.cpp</in>
+      </df>
+      <df name="ipt">
+        <in>IPTManager.cpp</in>
+      </df>
+      <df name="isa">
+        <df name="arc">
+          <in>Dcode.cpp</in>
+          <in>DcodeCache.cpp</in>
+          <in>Disasm.cpp</in>
+          <in>Opcode.cpp</in>
+        </df>
+      </df>
+      <df name="ise">
+        <df name="eia">
+          <in>EiaAuxRegister.cpp</in>
+          <in>EiaConditionCode.cpp</in>
+          <in>EiaCoreRegister.cpp</in>
+          <in>EiaExtension.cpp</in>
+          <in>EiaInstruction.cpp</in>
+        </df>
+      </df>
+      <df name="mem">
+        <df name="ccm">
+          <in>CCMemoryDevice.cpp</in>
+        </df>
+        <df name="dma">
+          <in>DMACloselyCoupledMemoryDevice.cpp</in>
+        </df>
+        <df name="mmap">
+          <in>IODevice.cpp</in>
+          <in>IODeviceIrq.cpp</in>
+          <in>IODeviceKeyboard.cpp</in>
+          <in>IODeviceManager.cpp</in>
+          <in>IODeviceNull.cpp</in>
+          <in>IODeviceScreen.cpp</in>
+          <in>IODeviceSound.cpp</in>
+          <in>IODeviceUart.cpp</in>
+        </df>
+        <in>MemoryDevice.cpp</in>
+      </df>
+      <df name="profile">
+        <in>BlockEntry.cpp</in>
+        <in>PageProfile.cpp</in>
+        <in>PhysicalProfile.cpp</in>
+      </df>
+      <df name="sys">
+        <df name="aps">
+          <in>Actionpoints.cpp</in>
+        </df>
+        <df name="cpu">
+          <in>CcmManager.cpp</in>
+          <in>CounterManager.cpp</in>
+          <in>EiaExtensionManager.cpp</in>
+          <in>PageCache.cpp</in>
+          <in>processor-auxs.cpp</in>
+          <in>processor-interrupts.cpp</in>
+          <in>processor-memory.cpp</in>
+          <in>processor-step.cpp</in>
+          <in>processor-timers.cpp</in>
+          <in>processor.cpp</in>
+        </df>
+        <df name="mem">
+          <in>BlockData.cpp</in>
+          <in>CcMemory.cpp</in>
+          <in>Memory.cpp</in>
+          <in>RaMemory.cpp</in>
+          <in>RoMemory.cpp</in>
+        </df>
+        <df name="mmu">
+          <in>Mmu.cpp</in>
+        </df>
+        <df name="smt">
+          <in>Smart.cpp</in>
+        </df>
+      </df>
+      <df name="translate">
+        <in>TranslateBlock.cpp</in>
+        <in>TranslationCache.cpp</in>
+        <in>TranslationEmit.cpp</in>
+        <in>TranslationManager.cpp</in>
+        <in>TranslationModule.cpp</in>
+        <in>TranslationOptManager.cpp</in>
+        <in>TranslationRuntimeApi.cpp</in>
+        <in>TranslationWorkUnit.cpp</in>
+        <in>TranslationWorker.cpp</in>
+      </df>
+      <df name="uarch">
+        <df name="bpu">
+          <in>BranchPredictorFactory.cpp</in>
+          <in>BranchPredictorOracle.cpp</in>
+          <in>BranchPredictorTwoLevel.cpp</in>
+        </df>
+        <df name="memory">
+          <in>CacheModel.cpp</in>
+          <in>CcmModel.cpp</in>
+          <in>LatencyCache.cpp</in>
+          <in>LatencyUtil.cpp</in>
+          <in>MainMemoryModel.cpp</in>
+          <in>MemoryModel.cpp</in>
+          <in>ScratchpadFactory.cpp</in>
+          <in>WayMemorisation.cpp</in>
+          <in>WayMemorisationFactory.cpp</in>
+        </df>
+        <df name="processor">
+          <in>ProcessorPipelineEncore5.cpp</in>
+          <in>ProcessorPipelineEncore7.cpp</in>
+          <in>ProcessorPipelineFactory.cpp</in>
+          <in>ProcessorPipelineSkipjack.cpp</in>
+        </df>
+      </df>
+      <df name="util">
+        <df name="system">
+          <in>SharedLibrary.cpp</in>
+          <in>Timer.cpp</in>
+        </df>
+        <in>Allocate.cpp</in>
+        <in>CodeBuffer.cpp</in>
+        <in>Counter.cpp</in>
+        <in>CounterTimer.cpp</in>
+        <in>Histogram.cpp</in>
+        <in>Log.cpp</in>
+        <in>MultiHistogram.cpp</in>
+        <in>Os.cpp</in>
+        <in>OutputStream.cpp</in>
+        <in>SymbolTable.cpp</in>
+        <in>TraceStream.cpp</in>
+        <in>Util.cpp</in>
+        <in>Zone.cpp</in>
+      </df>
+      <in>Assertion.cpp</in>
+      <in>main.cpp</in>
+      <in>system.cpp</in>
+      <in>trap.cpp</in>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>../inc/uarch/memory/CacheModel.h</itemPath>
+      <itemPath>Makefile</itemPath>
+      <itemPath>../tests/regression/tests/mytests/current</itemPath>
+      <itemPath>../etc/encore.arc</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>.</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>../bin/arcsim</executablePath>
+          <ccTool>
+            <incDir>
+              <pElem>/group/project/arc_tools/arcsim/sys/i386/elfio/1.0.3/include</pElem>
+              <pElem>/group/project/arc_tools/arcsim/sys/i386/llvm/RELEASE_29/include</pElem>
+              <pElem>../inc</pElem>
+            </incDir>
+            <preprocessorList>
+              <Elem>CYCLE_ACC_SIM</Elem>
+              <Elem>HAVE_MMX</Elem>
+              <Elem>HAVE_SSE2</Elem>
+              <Elem>LLVM_VERSION=29</Elem>
+              <Elem>SVN_REV=23982M</Elem>
+              <Elem>_GNU_SOURCE</Elem>
+              <Elem>__STDC_CONSTANT_MACROS</Elem>
+              <Elem>__STDC_LIMIT_MACROS</Elem>
+            </preprocessorList>
+            <undefinedList>
+              <Elem>__EXCEPTIONS</Elem>
+              <Elem>__GXX_RTTI</Elem>
+            </undefinedList>
+          </ccTool>
+        </makeTool>
+      </makefileType>
+      <item path="Assertion.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="api/api_funs.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="api/arc/api_arcint.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="api/arc/prof_count.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="api/ioc/api_ioc.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="api/ipt/api_ipt.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="api/irq/api_irq.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="api/mem/api_mem.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="api/prof/api_prof.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="arch/CacheArch.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="arch/Configuration.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="arch/IsaOptions.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="arch/MmuArch.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="arch/PageArch.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="arch/SimOptions.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="arch/SpadArch.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="concurrent/ConditionVariable.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="concurrent/Mutex.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="concurrent/Thread.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <folder path="src/api">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/arch">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/concurrent">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/ioc">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/ipt">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/isa">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/ise">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/mem">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/profile">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/sys">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/translate">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/uarch">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <folder path="src/util">
+        <ccTool>
+          <incDir>
+            <pElem>.</pElem>
+          </incDir>
+        </ccTool>
+      </folder>
+      <item path="ioc/Context.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="ioc/ContextItemId.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="ioc/ContextItemInterface.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="ioc/ContextItemInterfaceFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="ipt/IPTManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="isa/arc/Dcode.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="isa/arc/DcodeCache.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="isa/arc/Disasm.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="isa/arc/Opcode.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="ise/eia/EiaAuxRegister.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="ise/eia/EiaConditionCode.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="ise/eia/EiaCoreRegister.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="ise/eia/EiaExtension.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="ise/eia/EiaInstruction.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <preprocessorList>
+            <Elem>SVN_REV=23982:24077M</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="mem/MemoryDevice.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="mem/ccm/CCMemoryDevice.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="mem/dma/DMACloselyCoupledMemoryDevice.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="mem/mmap/IODevice.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="mem/mmap/IODeviceIrq.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="mem/mmap/IODeviceKeyboard.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="mem/mmap/IODeviceManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="mem/mmap/IODeviceNull.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="mem/mmap/IODeviceScreen.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="mem/mmap/IODeviceSound.cpp" ex="true" tool="1" flavor2="0">
+      </item>
+      <item path="mem/mmap/IODeviceUart.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="profile/BlockEntry.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="profile/PageProfile.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="profile/PhysicalProfile.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/aps/Actionpoints.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/cpu/CcmManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/cpu/CounterManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/cpu/EiaExtensionManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/cpu/PageCache.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/cpu/processor-auxs.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/cpu/processor-interrupts.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/cpu/processor-memory.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/cpu/processor-step.cpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="sys/cpu/processor-timers.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/cpu/processor.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/mem/BlockData.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/mem/CcMemory.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/mem/Memory.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/mem/RaMemory.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/mem/RoMemory.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/mmu/Mmu.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="sys/smt/Smart.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="system.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <preprocessorList>
+            <Elem>SVN_REV=23982:24077M</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="translate/TranslateBlock.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="translate/TranslationCache.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="translate/TranslationEmit.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="translate/TranslationManager.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="translate/TranslationModule.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="translate/TranslationOptManager.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="translate/TranslationRuntimeApi.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="translate/TranslationWorkUnit.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="translate/TranslationWorker.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="trap.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <preprocessorList>
+            <Elem>SVN_REV=23982:24077M</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="uarch/bpu/BranchPredictorFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/bpu/BranchPredictorOracle.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/bpu/BranchPredictorTwoLevel.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/memory/CacheModel.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <preprocessorList>
+            <Elem>SVN_REV=23982:24077M</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="uarch/memory/CcmModel.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/memory/LatencyCache.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/memory/LatencyUtil.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/memory/MainMemoryModel.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/memory/MemoryModel.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <preprocessorList>
+            <Elem>SVN_REV=23982:24077M</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="uarch/memory/ScratchpadFactory.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/memory/WayMemorisation.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/memory/WayMemorisationFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/processor/ProcessorPipelineEncore5.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/processor/ProcessorPipelineEncore7.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/processor/ProcessorPipelineFactory.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="uarch/processor/ProcessorPipelineSkipjack.cpp"
+            ex="false"
+            tool="1"
+            flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/Allocate.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/CodeBuffer.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/Counter.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/CounterTimer.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/Histogram.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/Log.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/MultiHistogram.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/Os.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/OutputStream.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/SymbolTable.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/TraceStream.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/Util.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/Zone.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/system/SharedLibrary.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+      <item path="util/system/Timer.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+        </ccTool>
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/arcsim/!svn/ver/23248/Import/uarch/mtcas/trunk/src/arch
+END
+CacheArch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/arcsim/!svn/ver/22783/Import/uarch/mtcas/trunk/src/arch/CacheArch.cpp
+END
+SimOptions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arcsim/!svn/ver/23213/Import/uarch/mtcas/trunk/src/arch/SimOptions.cpp
+END
+SpadArch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/src/arch/SpadArch.cpp
+END
+Configuration.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/arcsim/!svn/ver/23248/Import/uarch/mtcas/trunk/src/arch/Configuration.cpp
+END
+IsaOptions.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arcsim/!svn/ver/23213/Import/uarch/mtcas/trunk/src/arch/IsaOptions.cpp
+END
+PageArch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/23059/Import/uarch/mtcas/trunk/src/arch/PageArch.cpp
+END
+MmuArch.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arcsim/!svn/ver/23202/Import/uarch/mtcas/trunk/src/arch/MmuArch.cpp
+END

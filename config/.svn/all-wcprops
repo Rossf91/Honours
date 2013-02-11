@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/arcsim/!svn/ver/17967/Import/uarch/mtcas/trunk/config
+END
+mkinstalldirs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arcsim/!svn/ver/14505/Import/uarch/mtcas/trunk/config/mkinstalldirs
+END
+Make-rules
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arcsim/!svn/ver/14505/Import/uarch/mtcas/trunk/config/Make-rules
+END
+distclean
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arcsim/!svn/ver/14505/Import/uarch/mtcas/trunk/config/distclean
+END
+missing
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/arcsim/!svn/ver/17967/Import/uarch/mtcas/trunk/config/missing
+END
+config.guess
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/17967/Import/uarch/mtcas/trunk/config/config.guess
+END
+bootstrap
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arcsim/!svn/ver/14505/Import/uarch/mtcas/trunk/config/bootstrap
+END
+config.sub
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arcsim/!svn/ver/17967/Import/uarch/mtcas/trunk/config/config.sub
+END
+install-sh
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arcsim/!svn/ver/14505/Import/uarch/mtcas/trunk/config/install-sh
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/arcsim/!svn/ver/23221/Import/uarch/mtcas/trunk/inc/isa/arc
+END
+Opcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arcsim/!svn/ver/23221/Import/uarch/mtcas/trunk/inc/isa/arc/Opcode.h
+END
+Dcode.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/23221/Import/uarch/mtcas/trunk/inc/isa/arc/Dcode.h
+END
+Disasm.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arcsim/!svn/ver/23030/Import/uarch/mtcas/trunk/inc/isa/arc/Disasm.h
+END
+DcodeCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/arcsim/!svn/ver/23189/Import/uarch/mtcas/trunk/inc/isa/arc/DcodeCache.h
+END
+DcodeConst.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/arcsim/!svn/ver/23193/Import/uarch/mtcas/trunk/inc/isa/arc/DcodeConst.h
+END

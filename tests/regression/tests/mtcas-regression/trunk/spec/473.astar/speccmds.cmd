@@ -1,0 +1,2 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/473.astar/run/run_base_test_arcsim.0000
+-o lake.out -e lake.err  ../run_base_test_arcsim.0000/astar_base.arcsim -- lake.cfg

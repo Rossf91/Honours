@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3
+END
+sphinx_livepretend_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/sphinx_livepretend_base.arcsim
+END
+an406-fcaw-b.be.raw
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/an406-fcaw-b.be.raw
+END
+ctlfile
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/ctlfile
+END
+an407-fcaw-b.be.raw
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/an407-fcaw-b.be.raw
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/speccmds.cmd
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/compare.cmd
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/runcmd
+END
+total_considered.out
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/total_considered.out
+END
+an406-fcaw-b.le.raw
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/an406-fcaw-b.le.raw
+END
+an406-fcaw-b.raw
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/an406-fcaw-b.raw
+END
+an407-fcaw-b.le.raw
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/an407-fcaw-b.le.raw
+END
+args.an4
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/args.an4
+END
+an407-fcaw-b.raw
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/an407-fcaw-b.raw
+END
+beams.dat
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/beams.dat
+END

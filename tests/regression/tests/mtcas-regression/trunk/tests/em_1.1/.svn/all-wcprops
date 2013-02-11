@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arcsim/!svn/ver/23260/Import/uarch/mtcas-regression/trunk/tests/em_1.1
+END
+SC_exchange_ecr_check.hex
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/23237/Import/uarch/mtcas-regression/trunk/tests/em_1.1/SC_exchange_ecr_check.hex
+END
+mpu_instr_exec_test_0337631769.hex
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/arcsim/!svn/ver/23256/Import/uarch/mtcas-regression/trunk/tests/em_1.1/mpu_instr_exec_test_0337631769.hex
+END
+SC_read_oper_ecr_check.hex.correct.trc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/arcsim/!svn/ver/23237/Import/uarch/mtcas-regression/trunk/tests/em_1.1/SC_read_oper_ecr_check.hex.correct.trc
+END
+mpu_instr_exec_test_0337631769.hex.arc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/arcsim/!svn/ver/23256/Import/uarch/mtcas-regression/trunk/tests/em_1.1/mpu_instr_exec_test_0337631769.hex.arc
+END
+mpu_instr_exec_test_0838289988.hex.correct.trc
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/arcsim/!svn/ver/23256/Import/uarch/mtcas-regression/trunk/tests/em_1.1/mpu_instr_exec_test_0838289988.hex.correct.trc
+END
+EM_stack_excep_enter_leave_test_1009200884.hex.correct.trc
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/arcsim/!svn/ver/23260/Import/uarch/mtcas-regression/trunk/tests/em_1.1/EM_stack_excep_enter_leave_test_1009200884.hex.correct.trc
+END
+SC_read_oper_ecr_check.hex
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/23237/Import/uarch/mtcas-regression/trunk/tests/em_1.1/SC_read_oper_ecr_check.hex
+END
+mpu_instr_exec_test_0838289988.hex
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/arcsim/!svn/ver/23256/Import/uarch/mtcas-regression/trunk/tests/em_1.1/mpu_instr_exec_test_0838289988.hex
+END
+SC_write_oper_ecr_check.hex.correct.trc
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/arcsim/!svn/ver/23237/Import/uarch/mtcas-regression/trunk/tests/em_1.1/SC_write_oper_ecr_check.hex.correct.trc
+END
+EM_stack_excep_enter_leave_test_1009200884.hex
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/arcsim/!svn/ver/23260/Import/uarch/mtcas-regression/trunk/tests/em_1.1/EM_stack_excep_enter_leave_test_1009200884.hex
+END
+SC_exchange_ecr_check.hex.correct.trc
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/arcsim/!svn/ver/23237/Import/uarch/mtcas-regression/trunk/tests/em_1.1/SC_exchange_ecr_check.hex.correct.trc
+END
+mpu_instr_exec_test_0838289988.hex.arc
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/arcsim/!svn/ver/23256/Import/uarch/mtcas-regression/trunk/tests/em_1.1/mpu_instr_exec_test_0838289988.hex.arc
+END
+EM_stack_excep_enter_leave_test_1009200884.hex.arc
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/arcsim/!svn/ver/23260/Import/uarch/mtcas-regression/trunk/tests/em_1.1/EM_stack_excep_enter_leave_test_1009200884.hex.arc
+END
+mpu_instr_exec_test_0337631769.hex.correct.trc
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/arcsim/!svn/ver/23256/Import/uarch/mtcas-regression/trunk/tests/em_1.1/mpu_instr_exec_test_0337631769.hex.correct.trc
+END
+SC_write_oper_ecr_check.hex
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/23237/Import/uarch/mtcas-regression/trunk/tests/em_1.1/SC_write_oper_ecr_check.hex
+END

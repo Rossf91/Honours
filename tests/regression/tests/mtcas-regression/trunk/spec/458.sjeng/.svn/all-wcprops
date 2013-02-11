@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/458.sjeng
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/458.sjeng/speccmds.cmd
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/458.sjeng/compare.cmd
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/458.sjeng/runcmd
+END
+sjeng_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/458.sjeng/sjeng_base.arcsim
+END
+test.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/458.sjeng/test.txt
+END

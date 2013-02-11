@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII
+END
+DummyData
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/DummyData
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/runcmd
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/compare.cmd
+END
+dealII_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/dealII_base.arcsim
+END
+solution-0.gmv
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/solution-0.gmv
+END
+solution-1.gmv
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/solution-1.gmv
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/speccmds.cmd
+END
+solution-2.gmv
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/solution-2.gmv
+END
+solution-3.gmv
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/solution-3.gmv
+END
+solution-4.gmv
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/solution-4.gmv
+END
+grid-0.eps
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/grid-0.eps
+END
+grid-1.eps
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/grid-1.eps
+END
+grid-2.eps
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/grid-2.eps
+END
+grid-3.eps
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/grid-3.eps
+END
+grid-4.eps
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/447.dealII/grid-4.eps
+END

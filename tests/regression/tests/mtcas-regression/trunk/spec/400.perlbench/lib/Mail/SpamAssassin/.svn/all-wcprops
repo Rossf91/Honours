@@ -1,0 +1,185 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin
+END
+HTML.pm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/HTML.pm
+END
+AutoWhitelist.pm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/AutoWhitelist.pm
+END
+NoMailAudit.pm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/NoMailAudit.pm
+END
+PerMsgLearner.pm
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/PerMsgLearner.pm
+END
+EvalTests.pm
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/EvalTests.pm
+END
+DBBasedAddrList.pm
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/DBBasedAddrList.pm
+END
+AuditMessage.pm
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/AuditMessage.pm
+END
+MailingList.pm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/MailingList.pm
+END
+NoLocker.pm
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/NoLocker.pm
+END
+TextCat.pm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/TextCat.pm
+END
+Util.pm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Util.pm
+END
+Locker.pm
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Locker.pm
+END
+BayesStore.pm
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/BayesStore.pm
+END
+Locales.pm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Locales.pm
+END
+PhraseFreqs.pm
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/PhraseFreqs.pm
+END
+EncappedMessage.pm
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/EncappedMessage.pm
+END
+Dns.pm
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Dns.pm
+END
+Message.pm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Message.pm
+END
+Conf.pm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Conf.pm
+END
+CmdLearn.pm
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/CmdLearn.pm
+END
+Received.pm
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Received.pm
+END
+EncappedMIME.pm
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/EncappedMIME.pm
+END
+PersistentAddrList.pm
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/PersistentAddrList.pm
+END
+ArchiveIterator.pm
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/ArchiveIterator.pm
+END
+SHA1.pm
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/SHA1.pm
+END
+PerMsgStatus.pm
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/PerMsgStatus.pm
+END
+NetSet.pm
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/NetSet.pm
+END
+Replier.pm
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Replier.pm
+END
+Reporter.pm
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Reporter.pm
+END
+Bayes.pm
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Mail/SpamAssassin/Bayes.pm
+END

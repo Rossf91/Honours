@@ -1,0 +1,85 @@
+##
+## system.arc 
+##                 Default System Architecture File 
+##
+
+## SYSTEM, MODULE and CORE sections:
+## =================================
+## - At least one SYSTEM, MODULE and CORE section must be defined. 
+## - All sections and definitions must be defined in the following order:
+##   CACHE     <cache name> <...>      # Cache definition 
+##   CCM       <scratchpad name> <...> # CCM definition
+##   CORE      <core name> <...>       # Start of a new Core section
+##   MODULE    <module name>           # Start of a new Module section
+##   SYSTEM    <system name>           # Start of the System section
+##
+##
+## CACHE definition:
+## =================
+## - Replacement Policy: 1 = Least Recently Used, 2 = Random
+## - Bus clock divisor is ignored if used as cpu L1 cache
+##   CACHE    <cache name> <size (Bytes)> <block offset (bits)> <associativity> <replacement policy> <bus width above (bits)> <latency (cycles)> <bus clock divisor (above)>
+##
+## CCM definition:
+## ===============
+##   CCM   <scratchpad name> <start address> <end address> <data bus width (bits)> <latency (cycles)> <bus clock divisor>
+##
+##
+## CORE section:
+## =============
+##   CORE     <core name> <cpu clock ratio> <cpu data bus width (bits)> <pipeline stages> <warm-up period in cycles>
+##
+## MODULE section:
+## ===============
+##   MODULE      <module name> 
+##
+## SYSTEM section:
+## ===============
+##   SYSTEM        <system name> <master clock freq (MHz)> <mem start address> <mem end address> <mem data bus width (bits)> <mem latency (cycles)> <mem bus clock divisor>
+##
+##
+## ADD_CACHE statement:
+## ====================
+## - To add a private cache to a CORE or a shared cache to a MODULE or the SYSTEM
+## - Cache Type: 1 = Instruction, 2 = Data, 4 = Unified
+##   ADD_CACHE    <cache name> <type> 
+##
+## ADD_CCM statement:
+## ==================
+## - To add Closely Coupled Memory to a CORE.
+## - Memory Type: 1 = ICCM, 2 = DCCM, 4 = UCCM
+##   ADD_CCM    <scratchpad name> <type>
+##
+## ADD_CORE statement:
+## ==================
+## - To add cores to a MODULE 
+##   ADD_CORE    <core name> <number of cores>
+##
+## ADD_MODULE statement:
+## ====================
+## - To add modules to the SYSTEM 
+##   ADD_MODULE    <module name> <number of modules>
+
+
+# Cache definitions
+CACHE    8KB_cache   8192 4 2 2 32  1 1
+CACHE    16KB_cache 16384 4 2 2 32  1 1
+CACHE    32KB_cache 32768 4 2 2 32  1 1
+
+# CCM definitions
+CCM    1KB_ccm 0 1023 32 1 1 
+
+
+# Core sections (level 1)
+CORE         ARC750_core 1 32 7 316
+ADD_CACHE    32KB_cache 1
+ADD_CACHE    32KB_cache 2
+
+
+# Module sections (level 2)
+MODULE       ARC750_module	
+ADD_CORE     ARC750_core 1  
+
+# System section (level 3)
+SYSTEM        ARC750 1000 0 65535 32 8 2
+ADD_MODULE    ARC750_module 1

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/fractal
+END
+frac-single-iteration-2048-cpu-max.x
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/fractal/frac-single-iteration-2048-cpu-max.x
+END
+frac-single-iteration-20480-cpu-max.x
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/fractal/frac-single-iteration-20480-cpu-max.x
+END
+frac-single-iteration-128-cpu-max.x
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/fractal/frac-single-iteration-128-cpu-max.x
+END

@@ -1,0 +1,1 @@
+-c /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/470.lbm/run/run_base_test_arcsim.0000 -o lbm.out.cmp specperl /disk/home/pasta1/s0675281/SPEC2006/bin/specdiff -m -l 10  --abstol 1e-07 /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/470.lbm/data/test/output/lbm.out lbm.out

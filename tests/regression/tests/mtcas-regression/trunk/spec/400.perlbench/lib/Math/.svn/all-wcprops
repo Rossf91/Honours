@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Math
+END
+Trig.pm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Math/Trig.pm
+END
+BigFloat.pm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Math/BigFloat.pm
+END
+Complex.pm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Math/Complex.pm
+END
+BigRat.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Math/BigRat.pm
+END
+BigInt.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Math/BigInt.pm
+END

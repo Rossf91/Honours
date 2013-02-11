@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/phylip-dnapenny
+END
+infile
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/phylip-dnapenny/infile
+END
+outfile
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/phylip-dnapenny/outfile
+END
+outtree
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/phylip-dnapenny/outtree
+END
+dnapenny
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/phylip-dnapenny/dnapenny
+END
+runcmd-small
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/phylip-dnapenny/runcmd-small
+END

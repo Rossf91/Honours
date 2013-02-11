@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MIME
+END
+Base64.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MIME/Base64.pm
+END
+QuotedPrint.pm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MIME/QuotedPrint.pm
+END

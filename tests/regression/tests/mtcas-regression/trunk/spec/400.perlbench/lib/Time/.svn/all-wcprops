@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Time
+END
+localtime.pm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Time/localtime.pm
+END
+Local.pm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Time/Local.pm
+END
+Zone.pm
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Time/Zone.pm
+END
+tm.pm
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Time/tm.pm
+END
+gmtime.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Time/gmtime.pm
+END

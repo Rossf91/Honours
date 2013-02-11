@@ -1,0 +1,1 @@
+-c /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/433.milc/run/run_base_test_arcsim.0000 -o su3imp.out.cmp specperl /disk/home/pasta1/s0675281/SPEC2006/bin/specdiff -m -l 10  --abstol 2e-07  --reltol 0.0001 /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/433.milc/data/test/output/su3imp.out su3imp.out

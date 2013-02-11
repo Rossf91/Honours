@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arcsim/!svn/ver/23213/Import/uarch/mtcas/trunk/inc/uarch/memory
+END
+MemoryModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/arcsim/!svn/ver/23213/Import/uarch/mtcas/trunk/inc/uarch/memory/MemoryModel.h
+END
+LatencyUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/arcsim/!svn/ver/22654/Import/uarch/mtcas/trunk/inc/uarch/memory/LatencyUtil.h
+END
+MainMemoryModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/22738/Import/uarch/mtcas/trunk/inc/uarch/memory/MainMemoryModel.h
+END
+WayMemorisationFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/inc/uarch/memory/WayMemorisationFactory.h
+END
+CcmModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/inc/uarch/memory/CcmModel.h
+END
+LatencyCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/arcsim/!svn/ver/22909/Import/uarch/mtcas/trunk/inc/uarch/memory/LatencyCache.h
+END
+CacheModel.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/arcsim/!svn/ver/22909/Import/uarch/mtcas/trunk/inc/uarch/memory/CacheModel.h
+END
+ScratchpadFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/inc/uarch/memory/ScratchpadFactory.h
+END
+WayMemorisation.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/22549/Import/uarch/mtcas/trunk/inc/uarch/memory/WayMemorisation.h
+END

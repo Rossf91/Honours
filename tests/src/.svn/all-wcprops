@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src
+END
+link_script
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/link_script
+END
+kernel.s
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/kernel.s
+END
+mmx_asm_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/mmx_asm_test.c
+END
+timer.s
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/timer.s
+END
+fpx_arith.s
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/fpx_arith.s
+END
+link_bare
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/link_bare
+END
+Makefile.cosim
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/Makefile.cosim
+END
+vectors.s
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/vectors.s
+END
+ext_arith.s
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/ext_arith.s
+END
+loop_limm.s
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/loop_limm.s
+END
+align.s
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/align.s
+END
+sse2_test.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/sse2_test.c
+END
+sse2_test.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/sse2_test.cpp
+END
+abort_mpy.s
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/abort_mpy.s
+END
+lockup.s
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/lockup.s
+END
+mmu.s
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/mmu.s
+END
+speed.s
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/speed.s
+END
+swi_test.s
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/swi_test.s
+END
+dcache_test.s
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/dcache_test.s
+END
+addsdw.s
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/addsdw.s
+END
+pasta_test.s
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/pasta_test.s
+END
+brne_s.s
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/brne_s.s
+END
+ex_inst.s
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/ex_inst.s
+END
+bare.s
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/bare.s
+END
+loop.s
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/loop.s
+END
+lp_test.s
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/lp_test.s
+END
+uart.s
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/uart.s
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/Makefile
+END
+br_align.s
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arcsim/!svn/ver/19341/Import/uarch/mtcas/trunk/tests/src/br_align.s
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/File/Spec
+END
+VMS.pm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/File/Spec/VMS.pm
+END
+Epoc.pm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/File/Spec/Epoc.pm
+END
+Functions.pm
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/File/Spec/Functions.pm
+END
+Mac.pm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/File/Spec/Mac.pm
+END
+Win32.pm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/File/Spec/Win32.pm
+END
+OS2.pm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/File/Spec/OS2.pm
+END
+Unix.pm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/File/Spec/Unix.pm
+END

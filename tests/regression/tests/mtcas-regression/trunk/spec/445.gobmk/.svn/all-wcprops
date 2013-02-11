@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk
+END
+dniwog.tst
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/dniwog.tst
+END
+connect.tst
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/connect.tst
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/speccmds.cmd
+END
+connect_rot.tst
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/connect_rot.tst
+END
+gobmk_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/gobmk_base.arcsim
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/compare.cmd
+END
+connection.tst
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/connection.tst
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/runcmd
+END
+capture.tst
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/capture.tst
+END
+connection_rot.tst
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/connection_rot.tst
+END
+cutstone.tst
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/445.gobmk/cutstone.tst
+END

@@ -1,0 +1,2 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/447.dealII/run/run_base_test_arcsim.0000
+-o log -e dealII.err  ../run_base_test_arcsim.0000/dealII_base.arcsim -- 8

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/IO/Socket
+END
+INET.pm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/IO/Socket/INET.pm
+END
+UNIX.pm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/IO/Socket/UNIX.pm
+END

@@ -1,0 +1,85 @@
+10
+
+dir
+24077
+https://svn.arcsim.inf.ed.ac.uk/svn/arcsim/Import/uarch/mtcas-regression/trunk/spec
+https://svn.arcsim.inf.ed.ac.uk/svn/arcsim
+
+
+
+2011-03-09T21:09:45.876750Z
+21484
+s0565052
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9ecfb157-d3fe-4cf0-bdd1-bf192852b6bc
+
+450.soplex
+dir
+
+429.mcf
+dir
+
+470.lbm
+dir
+
+458.sjeng
+dir
+
+456.hmmer
+dir
+
+473.astar
+dir
+
+444.namd
+dir
+
+401.bzip2
+dir
+
+453.povray
+dir
+
+462.libquantum
+dir
+
+471.omnetpp
+dir
+
+464.h264ref
+dir
+
+433.milc
+dir
+
+403.gcc
+dir
+
+400.perlbench
+dir
+
+447.dealII
+dir
+
+482.sphinx3
+dir
+
+445.gobmk
+dir
+
+483.xalancbmk
+dir
+

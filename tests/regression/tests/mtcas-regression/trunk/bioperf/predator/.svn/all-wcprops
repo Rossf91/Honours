@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/predator
+END
+large.in
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/predator/large.in
+END
+predator
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/predator/predator
+END
+runcmd-large
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/predator/runcmd-large
+END
+stride.dat
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/predator/stride.dat
+END
+medium.in
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/predator/medium.in
+END
+runcmd-medium
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/predator/runcmd-medium
+END
+small.in
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/predator/small.in
+END
+runcmd-small
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/predator/runcmd-small
+END

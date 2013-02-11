@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 72
+arcsim
+Makefile.deps
+Makefile
+libsim.so
+libsim.a
+stamp-h1
+Makefile.defs
+
+END

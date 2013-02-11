@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MHonArc
+END
+CharEnt.pm
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MHonArc/CharEnt.pm
+END
+RFC822.pm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MHonArc/RFC822.pm
+END
+UTF8.pm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MHonArc/UTF8.pm
+END
+Char.pm
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MHonArc/Char.pm
+END
+Encode.pm
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MHonArc/Encode.pm
+END
+CharMaps.pm
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/MHonArc/CharMaps.pm
+END

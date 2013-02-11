@@ -1,0 +1,1 @@
+blastall -- -p blastn -i test.txt -d ecoli.nt

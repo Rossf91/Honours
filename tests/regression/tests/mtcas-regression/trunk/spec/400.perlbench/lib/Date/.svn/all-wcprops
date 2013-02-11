@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Date
+END
+Format.pm
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Date/Format.pm
+END
+Parse.pm
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Date/Parse.pm
+END
+Language.pm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/lib/Date/Language.pm
+END

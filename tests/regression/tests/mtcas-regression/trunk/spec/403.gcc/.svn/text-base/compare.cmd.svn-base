@@ -1,0 +1,1 @@
+-c /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/403.gcc/run/run_base_test_arcsim.0000 -o cccp.s.cmp specperl /disk/home/pasta1/s0675281/SPEC2006/bin/specdiff -m -l 10 /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/403.gcc/data/test/output/cccp.s cccp.s

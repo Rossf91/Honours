@@ -1,0 +1,289 @@
+ COMPILING AND RUNNING THE UNIVERSITY OF EDINBURGH ARC/EnCore SIMULATOR
+ =======================================================================
+
+
+--------------------------------------------------------------------------------
+If you are not compiling on DICE you need the following pre-requisite libraries:
+--------------------------------------------------------------------------------
+
+First you will need to install the ELFIO library from:
+
+ - http://sourceforge.net/projects/elfio/
+
+You also need to build and install LLVM and Clang RELEASE 2.7 from (NOTE: build
+instructions for CLANG/LLVM are further down):
+
+ - http://llvm.org/
+ - http://clang.llvm.org/
+
+NOTE: If you are using a DICE machine these libraries are already installed
+at a location where the subsequent configuration and build procedure will find
+and use them correctly.
+
+
+--------------------------------------------------------------------------------
+To build the simulator three steps are necessary
+--------------------------------------------------------------------------------
+
+1. At the top-level directory, type:
+
+-- 
+  # 1. Generate 'aclocal.m4' macros for automake, generate 'configure' from
+  #    'configure.ac', generate 'config.h' and top-level 'Makefile'
+  
+  $ aclocal && autoconf && autoheader && automake
+  
+--
+  # 2.DICE On a DICE machine run the following:
+  
+  $ ./configure
+
+  # 2.OTHER On any other installation you need to tell 'configure' about your
+  #    ELFIO installation directory and LLVM installation directory
+  
+  $ ./configure --with-elfio=PATH_TO_ELFIO_INSTALL --with-llvm=PATH_TO_LLVM_INSTALL
+--
+  # 3. Build the simulator
+  
+  $ make
+
+  This will compile the simulator sources and build both an executable simulator
+  called 'arcsim', as well as a simulator library called 'libsim.so'.
+
+  If you are using ArcSim as a library make sure you adjust the environment variable
+  LD_LIBRARY_PATH (DYLD_LIBRARY_PATH on Darwin) accordingly so 'libsim.so' is found
+  by the corresponding simulation tools.
+
+--------------------------------------------------------------------------------
+To re-configure the simulator type at the top-level directory:
+--------------------------------------------------------------------------------
+
+  # Enable cycle accurate simulation mode
+  $ ./configure --enable-cycle-accurate ; make
+  # Enable co-simulation mode
+  $ ./configure --enable-cosim ; make
+
+  To see all options that can be enabled or disabled have a look at the output of:
+  
+  $ ./configure --help
+
+--------------------------------------------------------------------------------
+NEW! Building with scons!
+--------------------------------------------------------------------------------
+
+  *** NB: To build with scons, you must have 'scons' in your path. ***
+
+  You can set configuration options, just like you did with ./configure. Use: 
+
+	$ scons -h
+
+	...to find out which options are available. 
+	e.g., to build a cycle-accurate 64-bit arcsim with a different LLVM path:
+
+	$ scons use64bit=true cycleacc=true llvm=/usr/local/llvm/2.9
+
+  Running scons for the first time with options will create a config.py file! 
+	This contains your configuration. It takes precendence over command-line
+	options at this point, so to modify options you can simply edit the file.
+	Otherwise, to clear the configuration, delete the file, or use:
+	$ scons --clear-config
+
+  To build (or rebuild necessary object files as you modify sources):
+  $ scons
+
+  (scons can work with the -j flag as well.)
+
+	To clean:
+	$ scons -c
+
+	To build libsim:
+	$ scons libsim
+
+	To build arcsim and libsim:
+  $ scons all
+
+--------------------------------------------------------------------------------
+To run the simulator
+--------------------------------------------------------------------------------
+
+1. Compile your application using a suitable compiler. 
+   For example, this could be one of arc-elf32-gcc, arc-linux-uclibc-gcc
+   or the hcac compiler from MetaWare.
+
+   e.g. if you have a program called test.c
+
+	 arc-linux-uclibc-gcc -mA7 -o test test.c
+
+   The uclibc version of the ARC gcc port is recommended, since 
+   the most important and frequently used syscalls are
+   emulated by simulator, allowing ordinary programs to perform
+   host-based I/O in the absence of an underlying operating system.
+	 
+2. Run the code through the simulator which currently has the
+   unimaginative name ./bin/arcsim
+   The filename for the executable is given by the -e option.
+	
+	e.g.
+	
+	./bin/arcsim -e test
+	
+   You can obtain a trace of all instructions using the -t flag
+   You can get more verbose output, including performance
+   statistics using the -v flag.
+
+   In general, to see all options available on the command line
+   type:
+        ./bin/arcsim --help
+	
+   To operate the simulator interactively, use the -i option.
+   This invokes a very simple command interpreter. To see all
+   of the commands, type 'help' in response to the prompt.
+
+Notes:
+
+  a). When it runs the JIT translator, the simulator expects to
+      find the following commands in it's path:
+
+     gcc  - tested on versions 3.4.4 and 4.0.0
+     as   - tested on version 2.15.92.0.2 (20040927)
+     ld   - tested on version 2.15.92.0.2 (20040927)
+
+      It also expects to find /bin/rm and expects to have write
+      permission to /tmp
+
+  b). Code generated during JIT translation should run on all x86 compatible
+      processors (both Intel and AMD).
+
+--------------------------------------------------------------------------------
+To run the simulator with memory mapped IO extensions
+--------------------------------------------------------------------------------
+
+Run the simulator with the --io-dev-lib <file> option passing the shared library
+that implements the memory mapped IO extension API:
+
+  $ ./bin/arcsim --fast --io-dev=uart0 --io-dev-lib src/io/io_mmap.so -e test
+
+--------------------------------------------------------------------------------
+Simulator build system
+--------------------------------------------------------------------------------
+
+We use the GNU auto* tools as a build and configuration system:
+
+  $ aclocal
+  # - Generate 'aclocal.m4' which includes local automake macros
+
+  $ autoconf
+  # - Generate 'configure' from 'configure.ac'
+  
+  $ automake
+  # - Generate Makefile.in from Makefile.am
+
+
+If you are like most people and never really understood all this GNU auto* tools
+magic - please have look at:
+
+ http://www.gnu.org/software/autoconf/manual/autoconf.html#Making-configure-Scripts
+ 
+--------------------------------------------------------------------------------
+Obtaining/Running the regression tests
+--------------------------------------------------------------------------------
+
+Regression tests are in a separate repository:
+ svn+ssh://svn.inf.ed.ac.uk/svn/uarch/mtcas-regression
+
+They must be checked out into the following location in order to be picked up
+by ArcSim's regression test framework:
+
+ $ cd tests/regression/tests
+
+ # - Check out EEMBC regression tests
+ $ svn co svn+ssh://svn.inf.ed.ac.uk/svn/uarch/mtcas-regression/trunk/eembc
+
+ # - Check out BioPERF regression tests
+ $ svn co svn+ssh://svn.inf.ed.ac.uk/svn/uarch/mtcas-regression/trunk/bioperf
+
+ # - Check out SPEC CPU 2006 regression tests
+ $ svn co svn+ssh://svn.inf.ed.ac.uk/svn/uarch/mtcas-regression/trunk/spec
+
+ # - Check out Linux OS regression tests
+ $ svn co svn+ssh://svn.inf.ed.ac.uk/svn/uarch/mtcas-regression/trunk/linux
+
+ # - Misc. regression tests (i.e. self modifying code, timers, etc.) 
+ $ svn co svn+ssh://svn.inf.ed.ac.uk/svn/uarch/mtcas-regression/trunk/tests
+
+ # - Run the regression tests
+ $ cd ../../..
+ $ make regression
+
+--------------------------------------------------------------------------------
+Building CLANG/LLVM RELEASE_29 for ArcSim 
+--------------------------------------------------------------------------------
+
+$ mkdir -p llvm/src/tags/RELEASE_29 ; cd llvm/src/tags/RELEASE_29
+$ svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_29/final .
+$ cd tools
+$ svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_29/final clang
+$ cd ..
+$ mkdir build ; cd build
+
+$ ../configure \
+  --prefix=PATH_TO_LLVM_INSTALL \
+  --enable-optimized \
+  --enable-bindings=no \
+  --enable-targets=host-only
+
+$ make -j2
+$ make install
+
+--------------------------------------------------------------------------------
+Building CLANG/LLVM RELEASE_30/final for ArcSim 
+--------------------------------------------------------------------------------
+
+$ mkdir -p llvm/src/tags/RELEASE_30/final ; cd llvm/src/tags/RELEASE_30/final
+$ svn co http://llvm.org/svn/llvm-project/llvm/tags/RELEASE_30/final .
+$ cd tools
+$ svn co http://llvm.org/svn/llvm-project/cfe/tags/RELEASE_30/final clang
+$ cd ..
+$ mkdir build ; cd build
+
+$ ../configure \
+  --prefix=PATH_TO_LLVM_INSTALL \
+  --enable-optimized \
+  --enable-bindings=no \
+  --enable-targets=host-only
+
+$ make -j2
+$ make install
+
+--------------------------------------------------------------------------------
+Building libELFIO on 64-bit systems
+--------------------------------------------------------------------------------
+
+libELFIO type definitions are incorrect for 64-bit systems. So when you download
+and unpack libELFIO find the header file 'ELFTypes.h' and replace the following:
+    
+    ...
+    // Attention! Platform depended definitions.
+    typedef unsigned long  Elf32_Addr;
+    typedef unsigned short Elf32_Half;
+    typedef unsigned long  Elf32_Off;
+    typedef signed   long  Elf32_Sword;
+    typedef unsigned long  Elf32_Word;
+    ...
+
+with:
+
+    ...
+    #include <stdint.h>
+    // Attention! Platform depended definitions.
+    typedef uint32_t  Elf32_Addr;
+    typedef uint16_t Elf32_Half;
+    typedef uint32_t  Elf32_Off;
+    typedef int32_t  Elf32_Sword;
+    typedef uint32_t Elf32_Word;
+    ...
+
+
+before building and installing libELFIO.
+
+                              --oOo--

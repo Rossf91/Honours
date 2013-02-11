@@ -1,0 +1,32 @@
+
+05.03.2010 - ArcSim Version 1.2 released.
+--------------------------------------------------------------------------------
+
+The major improvement to the previous release is the integration of a cycle
+accurate model into '--fast' mode (i.e. JIT DBT mode). Here is a selection of
+further major improvements:
+
+- Implemented '--fast' '--cycle' accurate mode that is 'almost' as accurate as
+  interpretive cycle accurate mode.
+- Much improved operand read/write macros.
+- Improved definitions in state.def so that only necessary fields and types are
+  emitted.
+- Improve variable names of Dcode attributes.
+- Improve cycle accurate structure member names of cp uState struct
+- It is now possible to compile CYCLE_ACC_SIM and REGTRACK_SIM enabled simulators
+  in all combinations.
+- Improved disassmbly output for interpretive and fast mode
+- Improved output when '--reuse' flag is used in conjunction with '--debug'
+- Fixed code generated for RORM instruction when dst1 and src1 (i.e. wa0 and ra0)
+  are not equal in JIT engine.
+- Updates to BBITn opcodes to support static branch prediction extensions
+- Initialise register read/write count in cycle accurate memory model
+- Adjusted decode and disasm to accept BRcc with bit 3 set to 1 (inverted branch predictor bit)
+- JIT compiler is now configurable (--fast-cc) gcc is the default
+- Translation mode option has been added but it has no effect yet (--fast-trans-mode)
+- Fixed the screen device so that the colour's display as on the real screen
+- Fixed the way how LO HI cycle count and instruction aux regs are set
+- Add instruction profiling and instruction latency calculation to --fast mode
+- Fixed disasm format for 'ld_s|ldb_s|ldw_s r0,[gp,s*]'
+- Introduce portable types into JIT engine
+- Fixed decode bug in 'J s12' format.

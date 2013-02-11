@@ -1,0 +1,2 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/403.gcc/run/run_base_test_arcsim.0000
+-o cccp.out -e cccp.err  ../run_base_test_arcsim.0000/gcc_base.arcsim -- cccp.i -o cccp.s

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/arcsim/!svn/ver/23176/Import/uarch/mtcas/trunk/inc/mem
+END
+MemoryDeviceInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/arcsim/!svn/ver/22910/Import/uarch/mtcas/trunk/inc/mem/MemoryDeviceInterface.h
+END
+DirectMemoryAccessDeviceInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/22910/Import/uarch/mtcas/trunk/inc/mem/DirectMemoryAccessDeviceInterface.h
+END
+MemoryRangeDeviceInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/22910/Import/uarch/mtcas/trunk/inc/mem/MemoryRangeDeviceInterface.h
+END

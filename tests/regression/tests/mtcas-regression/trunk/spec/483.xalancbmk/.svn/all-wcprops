@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/483.xalancbmk
+END
+test.lst
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/483.xalancbmk/test.lst
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/483.xalancbmk/speccmds.cmd
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/483.xalancbmk/compare.cmd
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/483.xalancbmk/runcmd
+END
+Xalan_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/483.xalancbmk/Xalan_base.arcsim
+END
+xalanc.xsl
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/483.xalancbmk/xalanc.xsl
+END
+100mb.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/483.xalancbmk/100mb.xsd
+END
+test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/483.xalancbmk/test.xml
+END

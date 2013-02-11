@@ -1,0 +1,1 @@
+perlbench_base.arcsim -- -I. -I./lib pack.pl

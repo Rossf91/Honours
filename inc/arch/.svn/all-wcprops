@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/arcsim/!svn/ver/23213/Import/uarch/mtcas/trunk/inc/arch
+END
+WpuArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/inc/arch/WpuArch.h
+END
+PageArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/23059/Import/uarch/mtcas/trunk/inc/arch/PageArch.h
+END
+MmuArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arcsim/!svn/ver/23202/Import/uarch/mtcas/trunk/inc/arch/MmuArch.h
+END
+IfqArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arcsim/!svn/ver/22838/Import/uarch/mtcas/trunk/inc/arch/IfqArch.h
+END
+CacheArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/arcsim/!svn/ver/22783/Import/uarch/mtcas/trunk/inc/arch/CacheArch.h
+END
+SystemArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/inc/arch/SystemArch.h
+END
+ModuleArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/inc/arch/ModuleArch.h
+END
+BpuArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/inc/arch/BpuArch.h
+END
+SimOptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/23150/Import/uarch/mtcas/trunk/inc/arch/SimOptions.h
+END
+SpadArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/inc/arch/SpadArch.h
+END
+CoreArch.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/23208/Import/uarch/mtcas/trunk/inc/arch/CoreArch.h
+END
+Configuration.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/arcsim/!svn/ver/23208/Import/uarch/mtcas/trunk/inc/arch/Configuration.h
+END
+IsaOptions.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/arcsim/!svn/ver/23213/Import/uarch/mtcas/trunk/inc/arch/IsaOptions.h
+END

@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/hmm/hub4
+END
+transition_matrices
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/hmm/hub4/transition_matrices
+END
+means
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/hmm/hub4/means
+END
+8gau.6000sen.quant
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/hmm/hub4/8gau.6000sen.quant
+END
+README.spec
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/hmm/hub4/README.spec
+END
+mixture_weights
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/hmm/hub4/mixture_weights
+END
+hub4opensrc.6000.mdef
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/hmm/hub4/hub4opensrc.6000.mdef
+END
+variances
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/hmm/hub4/variances
+END

@@ -1,0 +1,1 @@
+-c /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/462.libquantum/run/run_base_test_arcsim.0000 -o test.out.cmp specperl /disk/home/pasta1/s0675281/SPEC2006/bin/specdiff -m -l 10  --obiwan /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/462.libquantum/data/test/output/test.out test.out

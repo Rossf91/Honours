@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/arcsim/!svn/ver/22722/Import/uarch/mtcas/trunk/examples/eia/tests/src/bare
+END
+vector.s
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/22722/Import/uarch/mtcas/trunk/examples/eia/tests/src/bare/vector.s
+END
+link_bare
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/22085/Import/uarch/mtcas/trunk/examples/eia/tests/src/bare/link_bare
+END
+bare.s
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/22722/Import/uarch/mtcas/trunk/examples/eia/tests/src/bare/bare.s
+END

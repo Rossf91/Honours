@@ -1,0 +1,1 @@
+-c /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/444.namd/run/run_base_test_arcsim.0000 -o namd.out.cmp specperl /disk/home/pasta1/s0675281/SPEC2006/bin/specdiff -m -l 10  --abstol 1e-05 /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/444.namd/data/test/output/namd.out namd.out

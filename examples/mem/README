@@ -1,0 +1,21 @@
+== MemoryDevice Architecture ======================================
+
+An example of how to define a MemoryDevice is provided in the 'ExternalMemory'
+sub-folder.
+
+In order to build the sample MemoryDevice execute the following command in this
+directory:
+
+$ make
+
+In order to test the MemoryDevice execute the following command in this
+directory:
+
+$ ../../bin/arcsim \
+      --verbose \
+      --debug   \
+      --mem-dev-lib=ExternalMemory/ExternalMemory.so \
+      -e YOUR_PROGRAM
+
+The sample MemoryDevice is built with debug logging support and will
+log every read and write to the device if the '--debug' flag is specified.

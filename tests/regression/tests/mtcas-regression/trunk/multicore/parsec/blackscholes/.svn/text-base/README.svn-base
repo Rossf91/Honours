@@ -1,0 +1,5 @@
+Currently only configured for up to 128 cores. Fiddle with the source to change this.
+
+Blackscholes is compiled to take a file input.txt as input, unpack one of the tar files for the imput set you want. Run in arcsim with --emt (irq is also a good idea, screen is optional), it does not actually take command line arguments.
+
+It is configured to spawn number_of_cpus-1 threads, so all cpus have a task, although cpu0 will do nothing but spawn threads and wait to collect them.

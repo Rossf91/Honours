@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/456.hmmer
+END
+hmmer_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/456.hmmer/hmmer_base.arcsim
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/456.hmmer/speccmds.cmd
+END
+bombesin.hmm.new
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/456.hmmer/bombesin.hmm.new
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/456.hmmer/compare.cmd
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/456.hmmer/runcmd
+END
+bombesin.hmm
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/456.hmmer/bombesin.hmm
+END

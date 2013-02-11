@@ -1,0 +1,1 @@
+gobmk_base.arcsim -- --quiet --mode gtp --gtp-input=dniwog.tst

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/arcsim/!svn/ver/22952/Import/uarch/mtcas/trunk/src/ise/eia
+END
+EiaConditionCode.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/22130/Import/uarch/mtcas/trunk/src/ise/eia/EiaConditionCode.cpp
+END
+EiaInstruction.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/arcsim/!svn/ver/22952/Import/uarch/mtcas/trunk/src/ise/eia/EiaInstruction.cpp
+END
+EiaAuxRegister.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/arcsim/!svn/ver/22130/Import/uarch/mtcas/trunk/src/ise/eia/EiaAuxRegister.cpp
+END
+EiaExtension.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/arcsim/!svn/ver/22799/Import/uarch/mtcas/trunk/src/ise/eia/EiaExtension.cpp
+END
+EiaCoreRegister.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/arcsim/!svn/ver/22130/Import/uarch/mtcas/trunk/src/ise/eia/EiaCoreRegister.cpp
+END

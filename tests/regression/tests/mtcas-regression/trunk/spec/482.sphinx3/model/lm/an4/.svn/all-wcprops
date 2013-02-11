@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4
+END
+filler.dict
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/filler.dict
+END
+an4.ug.lm.DMP
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/an4.ug.lm.DMP
+END
+args.an4.in
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/args.an4.in
+END
+pittsburgh.bigendian.raw
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/pittsburgh.bigendian.raw
+END
+an4.ctl
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/an4.ctl
+END
+an4.ug.lm
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/an4.ug.lm
+END
+an4.dict
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/an4.dict
+END
+LICENSE.html
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/LICENSE.html
+END
+an4.phonelist
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/an4.phonelist
+END
+an4.ctl.in
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/an4.ctl.in
+END
+args.an4.test
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/args.an4.test
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/README
+END
+pittsburgh.littleendian.raw
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/482.sphinx3/model/lm/an4/pittsburgh.littleendian.raw
+END

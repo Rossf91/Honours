@@ -1,0 +1,139 @@
+#ifndef INC_TRANSLATE_TRANSLATION_RUNTIME_API_DEF_
+#define INC_TRANSLATE_TRANSLATION_RUNTIME_API_DEF_
+
+// -----------------------------------------------------------------------------
+// Types
+//
+#undef  TYPEDEF_JIT_V4HI
+#define TYPEDEF_JIT_V4HI                                                        \
+  typedef short v4hi __attribute__ ((vector_size (8)));
+
+#undef  TYPEDEF_JIT_VECT4
+#define TYPEDEF_JIT_VECT4                                                       \
+  typedef short vect4[4];
+
+// -----------------------------------------------------------------------------
+// Convenience MACRO including all type definitions
+//
+#undef  JIT_API_TYPES
+#define JIT_API_TYPES                                                           \
+  TYPEDEF_JIT_V4HI                                                              \
+  TYPEDEF_JIT_VECT4
+
+// -----------------------------------------------------------------------------
+// Functions
+//
+#undef  JIT_API_CPU_GLOBAL_LOCK
+#define JIT_API_CPU_GLOBAL_LOCK                                                 \
+extern int  cpuAtomicExchange (cpuContext cpu, uint32 addr, uint32* reg);
+
+#undef  JIT_API_CPU_TRACE
+#define JIT_API_CPU_TRACE                                                       \
+extern void cpuTraceString (cpuContext cpu, const char *msg);                   \
+extern void cpuTraceInstruction (cpuContext cpu, uint32 pc, uint32 inst, uint32 limm); \
+extern void cpuTraceWriteBack (cpuContext cpu, int wa0, int wenb0, uint32 *wdata0, int wa1, int wenb1, uint32 *wdata1);  \
+extern void cpuTraceException (cpuContext cpu, char *message);                 \
+extern void cpuTraceLpBack (cpuContext cpu);                                   \
+extern void cpuTraceLpCount (cpuContext cpu);                                  \
+extern void cpuTraceLpInst (cpuContext cpu, int taken, uint32 target);         \
+extern void cpuTraceMul64Inst (cpuContext cpu);                                \
+extern void cpuTraceLoad (cpuContext cpu, int fmt, uint32 addr, uint32 data);  \
+extern void cpuTraceStore (cpuContext cpu, int fmt, uint32 addr, uint32 data); \
+extern void cpuTraceLR (cpuContext cpu, uint32 addr, uint32 data, int success);\
+extern void cpuTraceSR (cpuContext cpu, uint32 addr, uint32 data, int success);\
+extern void cpuTraceRTIE (cpuContext cpu);                                     \
+extern void cpuTraceCommit (cpuContext cpu, int commit);
+
+#undef  JIT_API_CPU_MEMORY
+#define JIT_API_CPU_MEMORY                                                      \
+extern int    cpuWriteWord (cpuContext cpu, uint32 addr, uint32 data);           \
+extern int    cpuWriteHalf (cpuContext cpu, uint32 addr, uint32 data);           \
+extern int    cpuWriteByte (cpuContext cpu, uint32 addr, uint32 data);           \
+extern int    cpuReadWord  (cpuContext cpu, uint32 addr, uint32* data);          \
+extern int    cpuReadHalf  (cpuContext cpu, uint32 addr, uint32* data);          \
+extern int    cpuReadByte  (cpuContext cpu, uint32 addr, uint32* data);          \
+extern int    cpuReadHalfSigned (cpuContext cpu, uint32 addr, uint32* data);     \
+extern int    cpuReadByteSigned (cpuContext cpu, uint32 addr, uint32* data);     \
+extern int    cpuIoWrite(cpuContext cpu, void* dev, uint32 addr, uint32  data, uint32 size); \
+extern int    cpuIoRead (cpuContext cpu, void* dev, uint32 addr, uint32* data, uint32 size); \
+extern uint32 cpuTranslateVirtual (cpuContext cpu, uint32 virt_addr);
+
+#undef  JIT_API_CPU_CACHE
+#define JIT_API_CPU_CACHE                                                       \
+extern uint16   cpuFetchCycles(cpuContext cpu, uint32 addr);                    \
+extern uint16   cpuReadCycles (cpuContext cpu, uint32 addr);                    \
+extern uint16   cpuWriteCycles(cpuContext cpu, uint32 addr);
+
+#undef  JIT_API_CPU_CONTROL
+#define JIT_API_CPU_CONTROL                                                     \
+extern void  cpuBPred (cpuContext cpu, uint32 pc, int size, int link_offset, char isReturn, char link, uint64 fet); \
+extern void  cpuEmulateTrap (cpuContext cpu);                                   \
+extern int   cpuReadAuxReg (cpuContext cpu, uint32 addr, uint32* data);         \
+extern int   cpuWriteAuxReg (cpuContext cpu, uint32 addr, uint32 data);         \
+extern void  cpuRegisterLpEndJmpTarget (cpuContext cpu, uint32 lp_end_addr, uint32 lp_start_addr); \
+extern void  cpuEnterException (cpuContext cpu, uint32 ecr, uint32 efa, uint32 eret);  \
+extern void  cpuExitException (cpuContext cpu);                                 \
+extern void  cpuExitInterrupt (cpuContext cpu, int irq);                        \
+extern void  cpuHalt (cpuContext cpu);                                          \
+extern void  cpuBreak (cpuContext cpu);                                         \
+extern void  cpuSleep (cpuContext cpu, uint32 int_enables);                     \
+extern void  cpuSPFP (cpuContext cpu, uint32 op, uint32 *dst, uint32 s1, uint32 s2, int flag_enb);\
+extern void  cpuDPFP (cpuContext cpu, uint32 op, uint32 *dst, uint32 s1, uint32 s2, int flag_enb);\
+extern void  cpuDEXCL(cpuContext cpu, uint32 op, uint32 *dst, uint32 s1, uint32 s2);              \
+extern void  cpuFlag (cpuContext cpu, uint32 opd, uint32 kflag);
+
+#undef  JIT_API_CPU_EIA
+#define JIT_API_CPU_EIA                                                         \
+extern void  cpuEiaDopF (cpuContext cpu, void* fn, uint32* dst, uint32 src1, uint32 src2, int); \
+extern void  cpuEiaDop  (cpuContext cpu, void* fn, uint32* dst, uint32 src1, uint32 src2);      \
+extern void  cpuEiaSopF (cpuContext cpu, void* fn, uint32* dst, uint32 src1, int);              \
+extern void  cpuEiaSop  (cpuContext cpu, void* fn, uint32* dst, uint32 src1);                   \
+extern void  cpuEiaZopF (cpuContext cpu, void* fn, uint32* dst, int);                           \
+extern void  cpuEiaZop  (cpuContext cpu, void* fn, uint32* dst);                                \
+extern int   cpuEiaCond (cpuContext cpu, void* extn, uint8 cc);
+
+#undef  JIT_API_CPU_REGISTER_TRACKING
+#ifdef REGTRACK_SIM
+# define JIT_API_CPU_REGISTER_TRACKING                                          \
+extern void  cpuRegisterRead  (cpuContext cpu, int reg);                        \
+extern void  cpuRegisterWrite (cpuContext cpu, int reg);
+#else
+# define JIT_API_CPU_REGISTER_TRACKING
+#endif /* REGTRACK_SIM */
+
+#undef  JIT_API_CPU_PROFILING
+#define JIT_API_CPU_PROFILING                                                   \
+extern void  cpuHistogramInc (void* hist_ptr, uint32 idx);
+
+#undef  JIT_API_CPU_TIMERS
+#define JIT_API_CPU_TIMERS                                                      \
+extern void  cpuTimerSync (cpuContext cpu);
+
+#undef JIT_API_INSTRUMENTATION_POINTS
+#define JIT_API_INSTRUMENTATION_POINTS                                          \
+extern int cpuIptAboutToExecuteInstr(cpuContext cpu);                           \
+extern void cpuIptNotifyBeginInstrExecution(cpuContext cpu, uint32 addr, uint32 len); \
+extern void cpuIptNotifyBeginBasicBlockExecution(cpuContext cpu, uint32 addr);
+
+#undef JIT_API_TRANSLATION_MANAGEMENT
+#define JIT_API_TRANSLATION_MANAGEMENT                                          \
+extern void cpuRegisterTranslationForRemoval(cpuContext cpu, uint32 addr);
+
+// -----------------------------------------------------------------------------
+// Convenience MACRO including all function definitions
+//
+#undef  JIT_API_RUNTIME_CALLBACKS
+#define JIT_API_RUNTIME_CALLBACKS                                               \
+  JIT_API_CPU_GLOBAL_LOCK                                                       \
+  JIT_API_CPU_TRACE                                                             \
+  JIT_API_CPU_MEMORY                                                            \
+  JIT_API_CPU_CACHE                                                             \
+  JIT_API_CPU_CONTROL                                                           \
+  JIT_API_CPU_PROFILING                                                         \
+  JIT_API_CPU_TIMERS                                                            \
+  JIT_API_CPU_EIA                                                               \
+  JIT_API_CPU_REGISTER_TRACKING                                                 \
+  JIT_API_INSTRUMENTATION_POINTS                                                \
+  JIT_API_TRANSLATION_MANAGEMENT
+  
+#endif /* _jit_funs_def_ */

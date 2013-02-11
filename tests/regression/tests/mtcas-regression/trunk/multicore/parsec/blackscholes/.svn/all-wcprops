@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21490/Import/uarch/mtcas-regression/trunk/multicore/parsec/blackscholes
+END
+input_test.tar
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21490/Import/uarch/mtcas-regression/trunk/multicore/parsec/blackscholes/input_test.tar
+END
+input_simsmall.tar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/arcsim/!svn/ver/21490/Import/uarch/mtcas-regression/trunk/multicore/parsec/blackscholes/input_simsmall.tar
+END
+input_simlarge.tar
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/arcsim/!svn/ver/21490/Import/uarch/mtcas-regression/trunk/multicore/parsec/blackscholes/input_simlarge.tar
+END
+input_simdev.tar
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/arcsim/!svn/ver/21490/Import/uarch/mtcas-regression/trunk/multicore/parsec/blackscholes/input_simdev.tar
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21490/Import/uarch/mtcas-regression/trunk/multicore/parsec/blackscholes/README
+END
+blackscholes
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21490/Import/uarch/mtcas-regression/trunk/multicore/parsec/blackscholes/blackscholes
+END
+input_simmedium.tar
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/arcsim/!svn/ver/21490/Import/uarch/mtcas-regression/trunk/multicore/parsec/blackscholes/input_simmedium.tar
+END

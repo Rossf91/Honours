@@ -1,0 +1,22 @@
+== EIA Extension Instruction Architecture ======================================
+
+An example of how to define EIA extension is provided in the 'WhizzBangExtension'
+and 'MyEiaSample' sub-folder.
+
+In order to build the sample EIA extension execute the following command in this
+directory:
+
+$ make
+
+In order to test the EIA extension there is a simple test program called
+'TestEia.cpp' that will load an EIA extension, inspect it and call some
+API methods to test the extension. In order to execute this test program
+run the following in this directory:
+
+$ ./run.sh WhizzBangExtension/EiaWhizzBangExtension.so
+
+The arguments to the run script should be the path to the EIA extension library
+that is contained within the 'WhizzBangExtension' folder.
+
+In order to view the EIA API documentation point your browser to the 'docs/api'
+folder within your ArcSim distribution.

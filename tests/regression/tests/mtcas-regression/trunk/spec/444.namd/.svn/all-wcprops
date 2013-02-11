@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/444.namd
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/444.namd/speccmds.cmd
+END
+namd.out
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/444.namd/namd.out
+END
+namd_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/444.namd/namd_base.arcsim
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/444.namd/compare.cmd
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/444.namd/runcmd
+END
+namd.input
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/444.namd/namd.input
+END

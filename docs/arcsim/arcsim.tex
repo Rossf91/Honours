@@ -1,0 +1,324 @@
+\documentclass[a4paper,final,oneside,12pt]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[dvips]{color}
+\usepackage{fancyhdr}
+\usepackage[bookmarksopen=true,bookmarks=true,pdfpagemode=UseOutlines,a4paper]{hyperref}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{ifthen}
+\usepackage{everyshi}
+\usepackage{setspace}
+%% Control the fonts and formatting used in the table of contents.
+\usepackage[titles]{tocloft}
+\usepackage{tocbibind}
+\usepackage[flushmargin, bottom]{footmisc}
+\bibliographystyle{acm}
+
+
+\pagestyle{fancy}
+\hyphenation{Arc-Sim pack-ages}
+
+%% space between text and footnote
+\makeatletter
+\renewcommand\footnoterule{%
+  \vspace{1em}%   <-- one line space between text and footnoterule
+  \kern-3\p@\hrule\@width.4\columnwidth%
+  \kern2.6\p@}
+\makeatother
+
+%% By default the TOC has only dotted lines between title and pagenumber for section and lower. 
+%% This also defines dotted lines for chapters.
+\makeatletter
+\renewcommand\l@chapter[2]{%
+  \ifnum \c@tocdepth >\m@ne
+    \addpenalty{-\@highpenalty}%
+    \vskip 1.0em \@plus\p@
+    \setlength\@tempdima{1.5em}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip
+      {\bfseries #1}\nobreak\leaders\hbox{$\m@th \mkern \@dotsep mu.\mkern
+	 \@dotsep mu$}\hfill \nobreak
+             \hbox to\@pnumwidth{\hss \bfseries #2}\par
+      \penalty\@highpenalty
+    \endgroup
+  \fi} 
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Fancyheader definition  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\headheight}{30pt}
+\fancyhf{}
+\renewcommand{\sectionmark}[1]{\uppercase{\markboth{#1}{#1}}}
+\lhead{\leftmark}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Fancyfooter definition  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setlength{\footskip}{30pt}
+\fancyfoot{}
+\renewcommand{\footrulewidth}{0.5pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  If pagestyle plain is called  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fancypagestyle{plain}{%
+\fancyhead{}
+\fancyhead[OR]{\thepage}
+\fancyfoot{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Syntaxbox definition  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fboxsep1.36mm%
+\definecolor{g1}{gray}{.92}%
+\newsavebox{\syntaxbox}%
+\newenvironment{sybox}%
+{\noindent \begin{lrbox}{\syntaxbox}%
+\begin{minipage}{12.3cm}}%
+{\end{minipage}%
+\end{lrbox}%
+{\fcolorbox{g1}{g1}%
+{\parbox{12.3cm}{\usebox{\syntaxbox}\hfill\hbox{}}}}\newline\newline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Syntaxbox header definition  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{g2}{gray}{.52}%
+\newsavebox{\syntaxboxh}%
+\newenvironment{syboxh}%
+{\noindent \begin{lrbox}{\syntaxboxh}%
+\begin{minipage}{12.3cm}}%
+{\end{minipage}%
+\end{lrbox}%
+{\fcolorbox{g2}{g2}%
+{\parbox{12.3cm}{\usebox{\syntaxboxh}\hfill\hbox{}}}}\newline}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+%%%%%%%%%%%%%%%
+%  TITLEPAGE  %
+%%%%%%%%%%%%%%%
+\begin{titlepage}
+\begin{center}
+\begin{figure}[th]
+\centering
+{\includegraphics[width=0.5\textwidth]{figures/arcsim_logo_no_text-grey}}\\ 
+\end{figure}
+\vspace{1.5cm}
+% TITLE
+{\Huge{\textbf{\textsc{ArcSim} Documentation}}}\\
+{\small{\textbf{Flexible Ultra-High Speed Instruction Set Simulator}}}\\
+\vspace{2cm}
+{\small{\textsc{ArcSim} Documentation}}\\
+{\small{The University of Edinburgh}}\\
+{\small{\the\year}}
+\vspace{5cm}
+\end{center}
+\begin{tabular}{ll}
+Version: & \the\year.1\\
+Date: & \today\\
+Status: & draft\\
+Confidentiality: & confidential\\
+Reference & ArcSim-sys-doc\\
+\end{tabular}
+
+\end{titlepage}
+\cleardoublepage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Titlepage
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newpage
+\begingroup
+\renewcommand*{\addvspace}[1]{}
+\renewcommand{\contentsname}{Table of Contents}
+\tableofcontents
+\newpage
+\endgroup
+\pagenumbering{arabic} \setcounter{page}{1}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leave some space between paragraphs
+\setlength{\parskip}{.1in}
+% Do not indent paragraphs
+\setlength{\parindent}{0in}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Inroduction 
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter[Introduction]{Introduction}
+
+The \textsc{ArcSim} simulator is a highly configurable ultra-high speed
+Instruction Set Simulator (ISS).  Architectural features such as register file
+size, instruction set extensions, the set of branch conditions, the auxiliary
+register set, as well as memory mapped \textsc{Io} and closely coupled memory
+(\textsc{Ccm}) extensions can be specified via a set of well defined \textsc{Api}s
+and configuration settings. Furthermore, microarchitectural features such as pipeline
+depth, per instruction execution latencies, cache size and associativity, cache block
+replacement policies, memory subsystem layout, branch prediction strategies, as
+well as bus and memory access latencies are fully configurable.
+
+Overall the simulator provides the following simulation modes:
+\begin{itemize}
+  \item \emph{Co-simulation} mode working in lock-step with standard hardware
+    simulation tools used for hardware and performance verification.
+
+  \item Highly-optimised \emph{interpretive} simulation mode.
+
+  \item \emph{High-speed} \textsc{Dbt} simulation mode capable of simulating an
+  embedded system at speeds approaching or even exceeding that of a silicon
+  \textsc{Asip} whilst faithfully modelling the processor's architectural state.
+
+  \item \emph{High-speed} target microarchitecture adaptable
+  \emph{cycle-accurate} simulation mode modelling the processor pipeline,
+  caches, and memories.
+
+  \item A \emph{profiling} simulation mode that is orthogonal to the above
+  modes delivering additional statistics such as dynamic instruction
+  frequencies, detailed per register access statistics, per instruction
+  latency distributions, detailed cache statistics, executed delay slot
+  instructions, as well as various branch predictor statistics.
+
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% \textsc{ArcSim} Software Design and Architecture
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter[Software Architecture]{Software Architecture}
+
+\section{Overview}
+
+\textsc{ArcSim} is a target adaptable \textsc{Iss} providing full
+support of the \textsc{Arc}ompact\textsuperscript{\texttrademark} \textsc{Isa}.
+It is a full-system simulator, implementing the processor, its memory sub-system
+(including \textsc{Mmu}, memory mapped \textsc{Io} devices, closely coupled
+memories, etc.), and sufficient interrupt-driven peripherals to simulate the
+boot-up and interactive operation of a complete Linux-based system.
+
+\textsc{ArcSim} implements state-of-the-art just-in-time (\textsc{Jit}) dynamic
+binary translation (\textsc{Dbt}) techniques, combining interpretive and compiled
+simulation techniques in order to maintain high speed, observability and flexibility.
+
+\subsection{Dynamic Binary Translation}
+
+Efficient \textsc{Dbt} heavily relies on Just-in-Time (\textsc{Jit})
+compilation for the translation of target machine instructions to host
+machine instructions. Although \textsc{Jit} compiled code generally runs
+much faster than interpreted code, \textsc{Jit} compilation incurs an
+additional overhead. For this reason, only the most frequently executed code
+regions are translated to native code whereas less frequently executed code is
+still interpreted. Using a single-threaded execution model, the interpreter pauses
+until the \textsc{Jit} compiler has translated its assigned code block and the
+generated native code is executed directly. But program execution does not need to be
+paused to permit compilation, as a \textsc{Jit} compiler can operate
+in a separate thread while the program executes concurrently. This {\em
+  decoupled} or {\em asynchronous} execution of the \textsc{Jit}
+compiler increases complexity of the \textsc{Dbt}, but is very
+effective in hiding the compilation latency -- especially if the
+\textsc{Jit} compiler can run on a separate processor.
+
+\textsc{ArcSim} implements state-of-the-art \textsc{Jit} dynamic binary translation
+capable of effectively reducing dynamic compilation overhead, yielding execution
+speedups by doing \emph{parallel} \textsc{Jit} compilation, exploiting the broad
+proliferation of multi-core processors. The key idea is to detect {\em
+independent}, large translation units in execution traces and to {\em farm out}
+work to {\em multiple, concurrent} \textsc{Jit} compilation workers. To ensure
+that the latest and most frequently executed code traces are compiled first, we
+apply a priority queue based dynamic work scheduling strategy where the most
+recent, hottest traces are given highest priority.
+
+
+%% FIGURE: JIT compilation flow ------------------------------------------------
+\begin{figure}
+\centering
+  \includegraphics[width=0.99\textwidth]{figures/jit-translation-flow-chart} 
+  \caption
+    {\textsc{Jit} Dynamic Binary Translation Flow.}
+  \label{fig:jit-flow} 
+\end{figure}
+% ------------------------------------------------------------------------------
+
+
+
+
+\section{Simulation Modes}
+
+\subsection{Architectural Simulation}
+
+\subsection{Microarchitectural Simulation}
+
+\subsection{Co-Simulation}
+
+\subsection{Profiling Simulation}
+
+\subsection{Dynamic Binary Translation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Using ArcSim
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter[Using \textsc{ArcSim}]{Using \textsc{ArcSim}}
+
+\section{Overview}
+
+\section{Configuration}
+
+\section{Running \textsc{ArcSim}}
+
+\begin{syboxh}
+\textbf{Running a Simulation}
+\end{syboxh}
+\begin{sybox}
+\scriptsize{\texttt{%
+\$ arcsim -e binary.x
+}}
+\end{sybox}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Integrating ArcSim
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter[Integrating \textsc{ArcSim}]{Integrating \textsc{ArcSim}}
+
+\section{Overview}
+
+\section{Application Programming Interface}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% LIST OF FIGURES
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\begingroup
+\clearpage
+\setlength{\parskip}{0in}
+\newpage
+\listoffigures
+\newpage
+\endgroup
+
+\end{document}

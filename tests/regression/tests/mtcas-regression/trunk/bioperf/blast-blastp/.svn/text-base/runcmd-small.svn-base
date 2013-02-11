@@ -1,0 +1,1 @@
+blastall -- -p blastp -i small.in -d drosoph.aa -M BLOSUM62

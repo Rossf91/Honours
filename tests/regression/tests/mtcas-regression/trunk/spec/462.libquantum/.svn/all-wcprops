@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/462.libquantum
+END
+control
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/462.libquantum/control
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/462.libquantum/speccmds.cmd
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/462.libquantum/compare.cmd
+END
+libquantum_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/462.libquantum/libquantum_base.arcsim
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/462.libquantum/runcmd
+END

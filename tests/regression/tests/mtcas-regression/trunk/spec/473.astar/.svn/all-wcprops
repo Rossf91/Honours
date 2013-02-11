@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/473.astar
+END
+astar_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/473.astar/astar_base.arcsim
+END
+lake.bin
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/473.astar/lake.bin
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/473.astar/speccmds.cmd
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/473.astar/compare.cmd
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/473.astar/runcmd
+END
+lake.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/473.astar/lake.cfg
+END

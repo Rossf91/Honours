@@ -1,0 +1,2 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/464.h264ref/run/run_base_test_arcsim.0000
+-o foreman_test_baseline_encodelog.out -e foreman_test_baseline_encodelog.err  ../run_base_test_arcsim.0000/h264ref_base.arcsim -- -d foreman_test_encoder_baseline.cfg

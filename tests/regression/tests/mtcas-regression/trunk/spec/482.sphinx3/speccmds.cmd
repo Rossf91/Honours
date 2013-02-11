@@ -1,0 +1,2 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/482.sphinx3/run/run_base_test_arcsim.0000
+-o an4.log -e an4.err  ../run_base_test_arcsim.0000/sphinx_livepretend_base.arcsim -- ctlfile . args.an4

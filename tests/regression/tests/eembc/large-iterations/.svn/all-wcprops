@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations
+END
+iirflt01-250000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/iirflt01-250000-iter
+END
+routelookup-5500-iter
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/routelookup-5500-iter
+END
+puwmod01-6000000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/puwmod01-6000000-iter
+END
+aiifft01-2000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/aiifft01-2000-iter
+END
+coremark-3000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/coremark-3000-iter
+END
+fbital00-6000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/fbital00-6000-iter
+END
+aifirf01-600000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/aifirf01-600000-iter
+END
+cacheb01-10000000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/cacheb01-10000000-iter
+END
+rspeed01-5000000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/rspeed01-5000000-iter
+END
+idctrn01-60000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/idctrn01-60000-iter
+END
+conven00-20000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/conven00-20000-iter
+END
+bitmnp01-40000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/bitmnp01-40000-iter
+END
+rgbyiq01-400-iter
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/rgbyiq01-400-iter
+END
+autcor00-15000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/autcor00-15000-iter
+END
+basefp01-30000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/basefp01-30000-iter
+END
+matrix01-101-iter
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/matrix01-101-iter
+END
+cjpeg-1000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/cjpeg-1000-iter
+END
+djpeg-1000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/djpeg-1000-iter
+END
+text01-1400-iter
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/text01-1400-iter
+END
+rgbhpg01-400-iter
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/rgbhpg01-400-iter
+END
+ospf-26000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/ospf-26000-iter
+END
+ttsprk01-250000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/ttsprk01-250000-iter
+END
+fft00-20000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/fft00-20000-iter
+END
+viterb00-6000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/viterb00-6000-iter
+END
+rotate01-2400-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/rotate01-2400-iter
+END
+canrdr01-10000000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/canrdr01-10000000-iter
+END
+pktflow-25000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/pktflow-25000-iter
+END
+aifftr01-2000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/aifftr01-2000-iter
+END
+tblook01-50000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/tblook01-50000-iter
+END
+dither01-1000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/dither01-1000-iter
+END
+bezier01-2000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/bezier01-2000-iter
+END
+pntrch01-50000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/pntrch01-50000-iter
+END
+rgbcmy01-1000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/rgbcmy01-1000-iter
+END
+a2time01-120000-iter
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/a2time01-120000-iter
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/arcsim/!svn/ver/21483/Import/uarch/mtcas-regression/trunk/eembc/large-iterations/README.txt
+END

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/470.lbm
+END
+lbm.in
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/470.lbm/lbm.in
+END
+lbm_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/470.lbm/lbm_base.arcsim
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/470.lbm/speccmds.cmd
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/470.lbm/compare.cmd
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/470.lbm/runcmd
+END
+100_100_130_cf_a.of
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/470.lbm/100_100_130_cf_a.of
+END

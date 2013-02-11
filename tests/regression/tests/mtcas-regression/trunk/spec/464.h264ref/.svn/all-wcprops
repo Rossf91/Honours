@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref
+END
+foreman_qcif.264
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref/foreman_qcif.264
+END
+speccmds.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref/speccmds.cmd
+END
+foreman_test_encoder_baseline.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref/foreman_test_encoder_baseline.cfg
+END
+h264ref_base.arcsim
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref/h264ref_base.arcsim
+END
+compare.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref/compare.cmd
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref/runcmd
+END
+foreman_test_baseline_leakybucketparam.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref/foreman_test_baseline_leakybucketparam.cfg
+END
+foreman_qcif.yuv
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref/foreman_qcif.yuv
+END
+leakybucketrate.cfg
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/464.h264ref/leakybucketrate.cfg
+END

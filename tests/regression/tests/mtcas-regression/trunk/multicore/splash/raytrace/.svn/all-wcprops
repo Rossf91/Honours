@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/splash/raytrace
+END
+raytrace.x
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/splash/raytrace/raytrace.x
+END
+teapot.env
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/splash/raytrace/teapot.env
+END
+teapot.geo
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/splash/raytrace/teapot.geo
+END
+runcmd
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/splash/raytrace/runcmd
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/hw
+END
+eembc1-mixed.hex
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/hw/eembc1-mixed.hex
+END
+eembc1-viterb.hex
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/hw/eembc1-viterb.hex
+END
+fracfix-greyscale-finite.hex
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21585/Import/uarch/mtcas-regression/trunk/multicore/hw/fracfix-greyscale-finite.hex
+END

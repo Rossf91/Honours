@@ -1,0 +1,94 @@
+/* Link script for assembler tests design to run
+ * in user mode and may use exceptions
+ *
+ * Nigel Topham, Nov 2006.
+ *
+ * The vector.o object file contains the exception
+ * vectors and, in particular, the reset vector at
+ * 0x00000000 explicitly jumps to the location given
+ * by symbol 'reset_vec'.
+ *
+ * Symbol 'reset_vec' is located in the kernel text 
+ * section within kernel.o. The start code should
+ * initialise the processor state, and then cause
+ * a user-mode return-from-exception to the start
+ * of the code given by symbol 'main'.
+ *
+ */
+
+OUTPUT_ARCH(arc)
+OUTPUT_FORMAT("elf32-littlearc", "elf32-bigarc", "elf32-littlearc")
+ENTRY(__reset)
+
+vector_base = 0x00000000;
+ktext       = 0x00000800;
+utext       = 0x00001000;
+uheap       = 0x00008000;
+
+SECTIONS
+{
+	. = vector_base;
+	.text               : { ../bare/vector.o(.text) }
+	_evectors = .;
+	
+	. = ktext;
+	.text               : { ../bare/bare.o(.text) }
+	.rodata             : { ../bare/bare.o(.rodata) }
+	.data ALIGN(0x1000) : { ../bare/bare.o(.data) }
+	
+	. = utext;
+	.init               : { * (.text) }
+	.text               : { * (.text) }
+	.fini               : { * (.text) }
+	.ctors              : { * (.text) }
+	.dtors              : { * (.text) }
+	_etext = .;
+	PROVIDE (etext = .);
+	PROVIDE (__start_heap = uheap);
+	PROVIDE (__stack_top  = uheap - 8);
+
+	.data ALIGN(0x1000) : { * (.data) }
+	.bss                : { * (.bss) }
+	.sbss               : { * (.sbss) }
+  .sdata              : { * (.sdata) }
+	.got                : { * (.got) }
+	_edata = .;	
+
+  /* Stabs debugging sections.  */
+  .stab          0 : { *(.stab) }
+  .stabstr       0 : { *(.stabstr) }
+  .stab.excl     0 : { *(.stab.excl) }
+  .stab.exclstr  0 : { *(.stab.exclstr) }
+  .stab.index    0 : { *(.stab.index) }
+  .stab.indexstr 0 : { *(.stab.indexstr) }
+  .comment       0 : { *(.comment) }
+  .arcextmap 0 : { *(.arcextmap) }
+  /* DWARF debug sections.
+     Symbols in the DWARF debugging sections are relative to the beginning
+     of the section so we begin them at 0.  */
+  /* DWARF 1 */
+  .debug          0 : { *(.debug) }
+  .line           0 : { *(.line) }
+  /* GNU DWARF 1 extensions */
+  .debug_srcinfo  0 : { *(.debug_srcinfo) }
+  .debug_sfnames  0 : { *(.debug_sfnames) }
+  /* DWARF 1.1 and DWARF 2 */
+  .debug_aranges  0 : { *(.debug_aranges) }
+  .debug_pubnames 0 : { *(.debug_pubnames) }
+  /* DWARF 2 */
+  .debug_info     0 : { *(.debug_info .gnu.linkonce.wi.*) }
+  .debug_abbrev   0 : { *(.debug_abbrev) }
+  .debug_line     0 : { *(.debug_line) }
+  .debug_frame    0 : { *(.debug_frame) }
+  .debug_str      0 : { *(.debug_str) }
+  .debug_loc      0 : { *(.debug_loc) }
+  .debug_macinfo  0 : { *(.debug_macinfo) }
+  /* SGI/MIPS DWARF 2 extensions */
+  .debug_weaknames 0 : { *(.debug_weaknames) }
+  .debug_funcnames 0 : { *(.debug_funcnames) }
+  .debug_typenames 0 : { *(.debug_typenames) }
+  .debug_varnames  0 : { *(.debug_varnames) }
+  /* ARC Extension Sections */
+  .arcextmap	  0 : { *(.gnu.linkonce.arcextmap.*) }
+  /DISCARD/ : { *(.note.GNU-stack) }
+}

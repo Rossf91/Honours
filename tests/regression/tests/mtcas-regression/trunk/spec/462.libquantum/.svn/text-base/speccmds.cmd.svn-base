@@ -1,0 +1,2 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/462.libquantum/run/run_base_test_arcsim.0000
+-o test.out -e test.err  ../run_base_test_arcsim.0000/libquantum_base.arcsim -- 33 5

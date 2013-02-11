@@ -1,0 +1,36 @@
+Self Modifying Code
+===================
+
+This benchmark these benchmarks are designed to test if 
+arcsim can correctly handle self-modifying code.
+
+------
+Test 1 - Self modifying on the heap
+------
+Should: work in both interpreted and fast mode.
+Currently: returns wrong value in fast mode.
+
+Copies a function to the heap, executes it,
+and then copies a different function to the same location
+on the heap, and then executes that.
+
+Build: $ arc-elf32-gcc -mA7 -O0 -o test1 test1.c
+Run:   $ bin/arcsim --emt --verbose --fast -X -e test1
+
+Test has passed if it returns 42 (that is, r0 is 42...)
+
+------
+Test 2 - Self modifying in the .text section
+------
+Should: work in both interpreted and fast mode.
+Currently: arcsim segfaults in fast mode.
+
+Executes a function which runs a loop 10000000 times,
+and then copies a different function to the same location
+as the first function (so, in the .text area) and then 
+executes that.
+
+Build: $ arc-elf32-gcc -mA7 -O0 -o test2 test2.c
+Run:   $ bin/arcsim --emt --verbose --fast -X -e test2
+
+Test has passed if it returns 42 (that is, r0 is 42...)

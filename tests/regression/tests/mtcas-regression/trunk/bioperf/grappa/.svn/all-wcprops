@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa
+END
+large.in
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa/large.in
+END
+runcmd-large
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa/runcmd-large
+END
+medium.in
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa/medium.in
+END
+runcmd-medium
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa/runcmd-medium
+END
+grappa
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa/grappa
+END
+small.in
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa/small.in
+END
+small_alt.in
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa/small_alt.in
+END
+runcmd-small
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa/runcmd-small
+END
+runcmd-small_alt
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/grappa/runcmd-small_alt
+END

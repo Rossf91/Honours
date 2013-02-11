@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/22634/Import/uarch/mtcas-regression/trunk/tests/self-modifying-code
+END
+test1
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/21581/Import/uarch/mtcas-regression/trunk/tests/self-modifying-code/test1
+END
+self-modifying-text-section.c
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/arcsim/!svn/ver/22634/Import/uarch/mtcas-regression/trunk/tests/self-modifying-code/self-modifying-text-section.c
+END
+test2
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/21599/Import/uarch/mtcas-regression/trunk/tests/self-modifying-code/test2
+END
+self-modifying-text-section.x
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/arcsim/!svn/ver/22634/Import/uarch/mtcas-regression/trunk/tests/self-modifying-code/self-modifying-text-section.x
+END
+self-modifying-heap.c
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/arcsim/!svn/ver/22634/Import/uarch/mtcas-regression/trunk/tests/self-modifying-code/self-modifying-heap.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/22324/Import/uarch/mtcas-regression/trunk/tests/self-modifying-code/README
+END
+self-modifying-heap.x
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/arcsim/!svn/ver/22634/Import/uarch/mtcas-regression/trunk/tests/self-modifying-code/self-modifying-heap.x
+END

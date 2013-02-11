@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/arcsim/!svn/ver/22345/Import/uarch/mtcas/trunk/inc/uarch/bpu
+END
+BranchPredictorInterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/22345/Import/uarch/mtcas/trunk/inc/uarch/bpu/BranchPredictorInterface.h
+END
+BranchPredictorTwoLevel.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/22345/Import/uarch/mtcas/trunk/inc/uarch/bpu/BranchPredictorTwoLevel.h
+END
+BranchPredictorOracle.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/22345/Import/uarch/mtcas/trunk/inc/uarch/bpu/BranchPredictorOracle.h
+END
+BranchPredictorFactory.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/22345/Import/uarch/mtcas/trunk/inc/uarch/bpu/BranchPredictorFactory.h
+END

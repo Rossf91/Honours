@@ -1,0 +1,138 @@
+//                          Copyright Notice
+//
+//    Certain materials incorporated herein are copyright (C) 2004 – 2011, 
+//  The University Court of the University of Edinburgh. All Rights Reserved.
+//
+// =============================================================================
+//
+// Description:
+//
+// This file defines basic type definitions, compiler-independent macros to
+// provide declaration specifiers for alignment, name exporting, volatility,
+// and any other non-standard language features.
+//
+// =====================================================================
+
+
+#ifndef INC_API_TYPES_DEF_
+#define INC_API_TYPES_DEF_
+
+// -----------------------------------------------------------------------------
+// We want type safety for "handle" types (opaque pointers) so one gets an error
+// when trying to pass HANDLE_A to a function that requires HANDLE_B. If we just
+// typedef "handle" types to 'void*' we would not get type errors when mixing
+// HANDLE_A with HANDLE_B as the underlying structure is identical.
+//
+#define DECLARE_HANDLE(name) struct name##__ { int unused; };                   \
+                             typedef struct name##__ *name
+
+// -----------------------------------------------------------------------------
+// DEPRECATION WARNINGS
+//
+#if defined (__GNUC__)
+  #define DEPRECATED(func) func __attribute__ ((deprecated))
+#elif defined(_MSC_VER)
+  #define DEPRECATED(func) __declspec(deprecated) func
+#else
+  #pragma message("WARNING: You need to implement DEPRECATED for this compiler")
+  #define DEPRECATED(func) func
+#endif
+
+// -----------------------------------------------------------------------------
+// NAME EXPORTING
+//
+#if defined (_MSC_VER)
+  #if defined (BUILDING_DLL)
+    #define DLLEXPORT __declspec(dllexport)
+  #else
+    #define DLLEXPORT __declspec(dllimport)
+  #endif
+#else
+  #if defined (__GNUC__) && defined (HAVE_GCCVISIBILITYPATCH)
+    #define DLLEXPORT __attribute__ ((visibility("default")))
+    #define DLLLOCAL  __attribute__ ((visibility("hidden")))
+  #else
+    #define DLLEXPORT
+    #define DLLLOCAL
+  #endif
+#endif
+
+// -----------------------------------------------------------------------------
+// ALIGNMENT
+//
+#if defined (__GNUC__)
+  #define ALIGNED(_m_) __attribute__ ((aligned(_m_)))
+  #define MODE_SINT8   __attribute__ ((__mode__ (__QI__)))
+  #define MODE_SINT16  __attribute__ ((__mode__ (__HI__)))
+  #define MODE_SINT32  __attribute__ ((__mode__ (__SI__)))
+  #define MODE_UINT8   __attribute__ ((__mode__ (__QI__)))
+  #define MODE_UINT16  __attribute__ ((__mode__ (__HI__)))
+  #define MODE_UINT32  __attribute__ ((__mode__ (__SI__)))
+#else
+  #if defined (_MSC_VER)
+    #define ALIGNED(_m_) __declspec(align(_m_))
+    #define MODE_SINT8
+    #define MODE_SINT16
+    #define MODE_SINT32
+    #define MODE_UINT8
+    #define MODE_UINT16
+    #define MODE_UINT32
+  #endif
+#endif
+
+// -----------------------------------------------------------------------------
+// TYPES
+//
+#if defined (_MSC_VER) || defined (__GNUC__)
+  #define TYPEDEF_INT8                                                          \
+    typedef signed int          sint8  MODE_SINT8;                              \
+    typedef unsigned int        uint8  MODE_UINT8;
+
+  #define TYPEDEF_INT16                                                         \
+    typedef signed int          sint16 MODE_SINT16;                             \
+    typedef unsigned int        uint16 MODE_UINT16;
+
+  #define TYPEDEF_INT32                                                         \
+    typedef signed int          sint32 MODE_SINT32;                             \
+    typedef unsigned int        uint32 MODE_UINT32;
+
+  #define TYPEDEF_INT64                                                         \
+    typedef signed long long    sint64;                                         \
+    typedef unsigned long long  uint64;
+
+  #else  // neither (_MSC_VER) nor (__GNUC__)
+
+  #define TYPEDEF_INT8                                                          \
+    typedef signed char        sint8;                                           \
+    typedef unsigned int       uint8;
+
+  #define TYPEDEF_INT16                                                         \
+    typedef signed short       sint16;                                          \
+    typedef unsigned short     uint16;
+
+  # if defined (INT32)
+    #define TYPEDEF_INT32                                                       \
+      typedef signed int         sint32;                                        \
+      typedef unsigned int       uint32;
+  # else
+    #define TYPEDEF_INT32                                                       \
+      typedef signed long        sint32;                                        \
+      typedef unsigned long      uint32;
+  # endif
+
+  #define TYPEDEF_INT64                                                         \
+    typedef signed long long    sint64;                                         \
+    typedef unsigned long long  uint64;
+
+#endif // (_MSC_VER), (__GNUC__) etc. 2nd time.
+
+// -----------------------------------------------------------------------------
+// TYPES USED IN SIMULATOR
+// 
+#define T_TYPES_BASE                                                           \
+  TYPEDEF_INT8                                                                  \
+  TYPEDEF_INT16                                                                 \
+  TYPEDEF_INT32                                                                 \
+  TYPEDEF_INT64
+
+#endif /* INC_API_TYPES_DEF_ */

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/arcsim/!svn/ver/22822/Import/uarch/mtcas-regression/trunk/tests/ccm-tests
+END
+a600-ccm-test.c
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/22822/Import/uarch/mtcas-regression/trunk/tests/ccm-tests/a600-ccm-test.c
+END
+ccm.arc
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/22820/Import/uarch/mtcas-regression/trunk/tests/ccm-tests/ccm.arc
+END
+a600-ccm-test.x
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/arcsim/!svn/ver/22822/Import/uarch/mtcas-regression/trunk/tests/ccm-tests/a600-ccm-test.x
+END

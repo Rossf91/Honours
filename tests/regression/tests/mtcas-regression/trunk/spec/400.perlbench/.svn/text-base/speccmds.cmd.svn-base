@@ -1,0 +1,9 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/400.perlbench/run/run_base_test_arcsim.0000
+-o attrs.out -e attrs.err  ../run_base_test_arcsim.0000/perlbench_base.arcsim -- -I. -I./lib attrs.pl
+-o gv.out -e gv.err  ../run_base_test_arcsim.0000/perlbench_base.arcsim -- -I. -I./lib gv.pl
+-o makerand.out -e makerand.err  ../run_base_test_arcsim.0000/perlbench_base.arcsim -- -I. -I./lib makerand.pl
+-o pack.out -e pack.err  ../run_base_test_arcsim.0000/perlbench_base.arcsim -- -I. -I./lib pack.pl
+-o redef.out -e redef.err  ../run_base_test_arcsim.0000/perlbench_base.arcsim -- -I. -I./lib redef.pl
+-o ref.out -e ref.err  ../run_base_test_arcsim.0000/perlbench_base.arcsim -- -I. -I./lib ref.pl
+-o regmesg.out -e regmesg.err  ../run_base_test_arcsim.0000/perlbench_base.arcsim -- -I. -I./lib regmesg.pl
+-o test.out -e test.err  ../run_base_test_arcsim.0000/perlbench_base.arcsim -- -I. -I./lib test.pl

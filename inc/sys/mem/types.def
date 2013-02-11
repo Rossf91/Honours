@@ -1,0 +1,19 @@
+#ifndef INC_SYS_MEM_TYPES_DEF_
+#define INC_SYS_MEM_TYPES_DEF_
+
+// -----------------------------------------------------------------------------
+//    Provide one common definition of memory data types that is also used
+//    in each dynamically-generated C source file during JIT translation.
+// -----------------------------------------------------------------------------
+
+// -----------------------------------------------------------------------------
+// Memory type tags
+//
+#undef  E_ENUM_MEM_TYPE_TAGS
+#define E_ENUM_MEM_TYPE_TAGS                                                  \
+enum MemoryTypeTag {                                                           \
+    kMemoryTypeTagRam = 0x0000,                                                \
+    kMemoryTypeTagDev = 0x4000                                                 \
+};
+
+#endif  // INC_SYS_MEM_TYPES_DEF_

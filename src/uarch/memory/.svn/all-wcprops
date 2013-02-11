@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/arcsim/!svn/ver/23251/Import/uarch/mtcas/trunk/src/uarch/memory
+END
+MainMemoryModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/22738/Import/uarch/mtcas/trunk/src/uarch/memory/MainMemoryModel.cpp
+END
+WayMemorisationFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/src/uarch/memory/WayMemorisationFactory.cpp
+END
+CcmModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/src/uarch/memory/CcmModel.cpp
+END
+LatencyCache.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/arcsim/!svn/ver/22909/Import/uarch/mtcas/trunk/src/uarch/memory/LatencyCache.cpp
+END
+CacheModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/arcsim/!svn/ver/22909/Import/uarch/mtcas/trunk/src/uarch/memory/CacheModel.cpp
+END
+ScratchpadFactory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/22780/Import/uarch/mtcas/trunk/src/uarch/memory/ScratchpadFactory.cpp
+END
+WayMemorisation.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/22781/Import/uarch/mtcas/trunk/src/uarch/memory/WayMemorisation.cpp
+END
+MemoryModel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/23251/Import/uarch/mtcas/trunk/src/uarch/memory/MemoryModel.cpp
+END
+LatencyUtil.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/22910/Import/uarch/mtcas/trunk/src/uarch/memory/LatencyUtil.cpp
+END

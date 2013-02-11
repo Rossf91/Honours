@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee
+END
+large.in
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/large.in
+END
+runcmd-large
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/runcmd-large
+END
+small.aln
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/small.aln
+END
+lalign2list
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/lalign2list
+END
+medium.in
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/medium.in
+END
+out.txt
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/out.txt
+END
+runcmd-medium
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/runcmd-medium
+END
+t_coffee
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/t_coffee
+END
+small.dnd
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/small.dnd
+END
+small.in
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/small.in
+END
+small_alt.in
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/small_alt.in
+END
+runcmd-small
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/runcmd-small
+END
+runcmd-small_alt
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/arcsim/!svn/ver/21482/Import/uarch/mtcas-regression/trunk/bioperf/tcoffee/runcmd-small_alt
+END

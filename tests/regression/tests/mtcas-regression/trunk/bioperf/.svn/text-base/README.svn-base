@@ -1,0 +1,10 @@
+BioPerf Benchmark Suite
+
+This is not the full BioPerf benchmark suite. Some of the larger datasets
+have been removed and we only use the small ones for the regression tests.
+The binaries have been modified to not use certain system calls, not ask
+for input, etc. to make them run in the simulator.
+
+
+-- Tobias v. Koch
+

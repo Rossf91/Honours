@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/arcsim/!svn/ver/23259/Import/uarch/mtcas/trunk/tests/regression/mk
+END
+rules-performance.mk
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/arcsim/!svn/ver/22155/Import/uarch/mtcas/trunk/tests/regression/mk/rules-performance.mk
+END
+config.mk.in
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/23173/Import/uarch/mtcas/trunk/tests/regression/mk/config.mk.in
+END
+rules.mk
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/arcsim/!svn/ver/23259/Import/uarch/mtcas/trunk/tests/regression/mk/rules.mk
+END
+rules-multicore.mk
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/arcsim/!svn/ver/21922/Import/uarch/mtcas/trunk/tests/regression/mk/rules-multicore.mk
+END
+boilerplate.mk
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/22145/Import/uarch/mtcas/trunk/tests/regression/mk/boilerplate.mk
+END
+tests.mk
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/arcsim/!svn/ver/23259/Import/uarch/mtcas/trunk/tests/regression/mk/tests.mk
+END

@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules
+END
+local.cf
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/local.cf
+END
+STATISTICS-set1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/STATISTICS-set1.txt
+END
+10_misc.cf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/10_misc.cf
+END
+STATISTICS-set2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/STATISTICS-set2.txt
+END
+STATISTICS-set3.txt
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/STATISTICS-set3.txt
+END
+30_text_de.cf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/30_text_de.cf
+END
+20_fake_helo_tests.cf
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_fake_helo_tests.cf
+END
+user_prefs.template
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/user_prefs.template
+END
+regression_tests.cf
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/regression_tests.cf
+END
+20_phrases.cf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_phrases.cf
+END
+20_ratware.cf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_ratware.cf
+END
+23_bayes.cf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/23_bayes.cf
+END
+30_text_es.cf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/30_text_es.cf
+END
+20_porn.cf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_porn.cf
+END
+25_body_tests_pl.cf
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/25_body_tests_pl.cf
+END
+STATISTICS.txt
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/STATISTICS.txt
+END
+20_anti_ratware.cf
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_anti_ratware.cf
+END
+30_text_sk.cf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/30_text_sk.cf
+END
+25_head_tests_pl.cf
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/25_head_tests_pl.cf
+END
+triplets.txt
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/triplets.txt
+END
+50_scores.cf
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/50_scores.cf
+END
+20_meta_tests.cf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_meta_tests.cf
+END
+25_body_tests_es.cf
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/25_body_tests_es.cf
+END
+30_text_fr.cf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/30_text_fr.cf
+END
+languages
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/languages
+END
+20_body_tests.cf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_body_tests.cf
+END
+25_head_tests_es.cf
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/25_head_tests_es.cf
+END
+60_whitelist.cf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/60_whitelist.cf
+END
+30_text_pl.cf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/30_text_pl.cf
+END
+30_text_it.cf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/30_text_it.cf
+END
+20_uri_tests.cf
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_uri_tests.cf
+END
+20_head_tests.cf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_head_tests.cf
+END
+20_html_tests.cf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/arcsim/!svn/ver/21484/Import/uarch/mtcas-regression/trunk/spec/400.perlbench/rules/20_html_tests.cf
+END

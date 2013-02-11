@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/arcsim/!svn/ver/23185/Import/uarch/mtcas/trunk/inc/translate
+END
+TranslationManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/arcsim/!svn/ver/22955/Import/uarch/mtcas/trunk/inc/translate/TranslationManager.h
+END
+TranslationOptManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/22904/Import/uarch/mtcas/trunk/inc/translate/TranslationOptManager.h
+END
+TranslationRuntimeApi.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/arcsim/!svn/ver/22930/Import/uarch/mtcas/trunk/inc/translate/TranslationRuntimeApi.h
+END
+TranslationEmit.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/arcsim/!svn/ver/23090/Import/uarch/mtcas/trunk/inc/translate/TranslationEmit.h
+END
+Translation.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/arcsim/!svn/ver/22770/Import/uarch/mtcas/trunk/inc/translate/Translation.h
+END
+TranslationWorkUnit.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/arcsim/!svn/ver/23007/Import/uarch/mtcas/trunk/inc/translate/TranslationWorkUnit.h
+END
+TranslationCache.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/arcsim/!svn/ver/22893/Import/uarch/mtcas/trunk/inc/translate/TranslationCache.h
+END
+TranslationRuntimeApi.def
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/arcsim/!svn/ver/23185/Import/uarch/mtcas/trunk/inc/translate/TranslationRuntimeApi.def
+END
+TranslationModule.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/arcsim/!svn/ver/23090/Import/uarch/mtcas/trunk/inc/translate/TranslationModule.h
+END
+TranslationWorker.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/arcsim/!svn/ver/23109/Import/uarch/mtcas/trunk/inc/translate/TranslationWorker.h
+END

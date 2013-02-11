@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/arcsim/!svn/ver/23176/Import/uarch/mtcas/trunk/inc/mem/mmap
+END
+IODeviceSound.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/arcsim/!svn/ver/22963/Import/uarch/mtcas/trunk/inc/mem/mmap/IODeviceSound.h
+END
+IODeviceManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/arcsim/!svn/ver/22963/Import/uarch/mtcas/trunk/inc/mem/mmap/IODeviceManager.h
+END
+IODeviceNull.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/arcsim/!svn/ver/22963/Import/uarch/mtcas/trunk/inc/mem/mmap/IODeviceNull.h
+END
+IODeviceIrq.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/arcsim/!svn/ver/23176/Import/uarch/mtcas/trunk/inc/mem/mmap/IODeviceIrq.h
+END
+IODeviceUart.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/arcsim/!svn/ver/22963/Import/uarch/mtcas/trunk/inc/mem/mmap/IODeviceUart.h
+END
+IODevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/arcsim/!svn/ver/22963/Import/uarch/mtcas/trunk/inc/mem/mmap/IODevice.h
+END
+IODeviceScreen.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/arcsim/!svn/ver/22963/Import/uarch/mtcas/trunk/inc/mem/mmap/IODeviceScreen.h
+END
+IODeviceKeyboard.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/arcsim/!svn/ver/22963/Import/uarch/mtcas/trunk/inc/mem/mmap/IODeviceKeyboard.h
+END

@@ -1,0 +1,218 @@
+#ifndef INC_SYS_CPU_STATE_DEF_
+#define INC_SYS_CPU_STATE_DEF_
+
+// -----------------------------------------------------------------------------
+//    Provide one common definition of the cpuState structure that is also used
+//    in each dynamically-generated C source file during JIT translation.
+// -----------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------
+// Pipeline stages enum definition
+//
+#undef  E_ENUM_PIPELINE
+#define E_ENUM_PIPELINE                                                         \
+enum Pipeline {                                                                 \
+    FET_ST = 0,                                                                 \
+    ALN_ST,                                                                     \
+    DEC_ST,                                                                     \
+    REG_ST,                                                                     \
+    EX_ST,                                                                      \
+    MEM_ST,                                                                     \
+    WB_ST,                                                                      \
+    PIPELINE_STAGES                                                             \
+};
+
+// -----------------------------------------------------------------------------
+// Interrupt types
+// FIXME: Document interrupt types
+//
+#undef  E_ENUM_PENDING_ACTIONS
+#define E_ENUM_PENDING_ACTIONS                                                  \
+typedef enum PendingActionKind {                                                \
+  kPendingAction_NONE                   = 0x00,                                 \
+  kPendingAction_CPU                    = 0x01,                                 \
+  kPendingAction_EXTERNAL_AGENT         = 0x02,                                 \
+  kPendingAction_FLUSH_TRANSLATION      = 0x04,                                 \
+  kPendingAction_FLUSH_ALL_TRANSLATIONS = 0x08,                                 \
+  kPendingAction_WATCHPOINT             = 0x10,                                 \
+  kPendingAction_IPT                    = 0x20,                                 \
+} PendingActionKind;
+
+// -----------------------------------------------------------------------------
+// regStats data structure - needed for register tracking simulation mode
+//
+#undef STRUCT_REG_STATS_FIELD
+#if defined(REGTRACK_SIM)
+  #define STRUCT_REG_STATS                                                      \
+    typedef struct regStats {                                                   \
+      uint64 read;                                                              \
+      uint64 write;                                                             \
+      uint64 last;                                                              \
+      double geom;                                                              \
+      double arith;                                                             \
+      int regno;                                                                \
+    } regStats;
+
+  #define STRUCT_REG_STATS_FIELD                                                \
+    regStats gprs_stats[GPR_BASE_REGS];
+#else
+  #define STRUCT_REG_STATS
+  #define STRUCT_REG_STATS_FIELD
+#endif
+
+// -----------------------------------------------------------------------------
+// Cycle accurate simulation fields for cpuState:
+//  -   ibuff_addr                  -> address of buffered half-word fetch
+//  -   pl[PIPELINE_STAGES];        -> cycle accurate pipeline
+//  -   gprs_avail[GPR_BASE_REGS];  -> cycle at which a register is available
+//  -   timer_expiry                -> cycle at which next timer expires
+//// -----------------------------------------------------------------------------
+#undef STRUCT_CPU_STATE_CYCLE_ACCURATE_SIMULATION_FIELDS
+#if defined(CYCLE_ACC_SIM)
+  #define STRUCT_CPU_STATE_CYCLE_ACCURATE_SIMULATION_FIELDS                     \
+    uint64 pl[PIPELINE_STAGES];                                                 \
+    uint64 gprs_avail[GPR_BASE_REGS];                                           \
+    uint64 flag_avail;                                                          \
+    uint64 ignore;                                                              \
+    uint64 t0;
+#else
+  #define STRUCT_CPU_STATE_CYCLE_ACCURATE_SIMULATION_FIELDS
+#endif
+
+// -----------------------------------------------------------------------------
+//
+// Branch predictor state variables
+//
+//// ---------------------------------------------------------------------------
+#undef BRANCH_PREDICTOR_STATE_FIELDS
+#if defined(ENABLE_BPRED)
+  #define BRANCH_PREDICTOR_STATE_FIELDS                                         \
+    char delayed_call;                                                          \
+    char delayed_return;
+#else
+  #define BRANCH_PREDICTOR_STATE_FIELDS
+#endif
+
+// -----------------------------------------------------------------------------
+//
+// Latency Cache tag|data data types and fields
+// FIXME: @igor - convert to new cache implementation
+//// ---------------------------------------------------------------------------
+
+#undef  T_TYPE_LATENCY_CACHE_TAG
+#define T_TYPE_LATENCY_CACHE_TAG typedef uint32 LatencyCacheTag[DEFAULT_HASH_CACHE_SIZE];
+
+#undef  T_TYPE_LATENCY_CACHE_VAL
+#define T_TYPE_LATENCY_CACHE_VAL typedef uint16 LatencyCacheVal;
+
+#undef  LATENCY_CACHE_TAG_FIELDS
+#define LATENCY_CACHE_TAG_FIELDS LatencyCacheTag lat_cache_i_tag, lat_cache_d_tag;
+
+#undef  LATENCY_CACHE_VAL_FIELDS
+#define LATENCY_CACHE_VAL_FIELDS LatencyCacheVal lat_cache_fetch_val, lat_cache_read_val, lat_cache_write_val;
+
+#undef  LATENCY_CACHE_COUNT_FIELDS
+#define LATENCY_CACHE_COUNT_FIELDS uint64 lat_cache_fetch_hit, lat_cache_read_hit, lat_cache_write_hit;
+
+
+// -----------------------------------------------------------------------------
+//
+// Page cache structures
+// EntryPageCache_ {
+//   uint32  addr_;  // tagged virtual address
+//   uint32* block_; // depending on tagged address this is either a direct pointer
+//                   // to memory or to a memory device
+// }
+//
+//// ---------------------------------------------------------------------------
+#undef T_TYPE_PAGE_CACHE_ENTRY
+#define T_TYPE_PAGE_CACHE_ENTRY    \
+typedef struct EntryPageCache_ {      \
+  uint32  addr_;                      \
+  uint32* block_;                     \
+} EntryPageCache_;
+
+#undef PAGE_CACHES
+#define PAGE_CACHES                   \
+  EntryPageCache_* cache_page_read_;  \
+  EntryPageCache_* cache_page_write_; \
+  EntryPageCache_* cache_page_exec_;
+
+
+// -----------------------------------------------------------------------------
+//
+// A cpuState stores a pointer to its cpuContext
+//
+// -----------------------------------------------------------------------------
+#undef  T_TYPE_CPU_CONTEXT
+#define T_TYPE_CPU_CONTEXT                                                    \
+  typedef void* cpuContext;
+
+
+// -----------------------------------------------------------------------------
+//
+// cpuState - structure
+// NOTE: DO NOT PUT COMMENTS OR ADDITIONAL NEWLINES IN THE FOLLOWING DEFINE AS
+//       THIS STRUCTURE IS INJECTED INTO DYNAMICALLY GENERATED CODE.
+//
+//// ----------------------------------------------------------------------------
+#undef STRUCT_CPU_STATE
+#define STRUCT_CPU_STATE                                                        \
+  typedef struct cpuState {                                                     \
+    cpuContext cpu_ctx;                                                         \
+    uint32 pc;                                                                  \
+    uint32 next_pc;                                                             \
+    uint32 next_lpc;                                                            \
+    uint32 gprs[GPR_BASE_REGS];                                                 \
+    uint32 stack_top;                                                           \
+    uint32 stack_base;                                                          \
+    uint32 shadow_stack_top;                                                    \
+    uint32 shadow_stack_base;                                                   \
+    uint32 lp_start;                                                            \
+    uint32 lp_end;                                                              \
+    uint32 lock_phys_addr;                                                      \
+    uint32 pending_actions;                                                     \
+    uint32 pc_mask;                                                             \
+    uint32 lpc_mask;                                                            \
+    uint32 addr_mask;                                                           \
+    char   raise_exception;                                                     \
+    char   ES, SC, DZ, L, Z, N, C, V, U, D, AE, A2, A1, E2, E1, E, H, RB, IE;   \
+    char   X3, X2, X1, X0;                                                      \
+    uint32 iterations;                                                          \
+    uint32 ibuff_addr;                                                          \
+    uint64 timer_expiry;                                                        \
+    uint32 auxs[BUILTIN_AUX_RANGE];                                             \
+    PAGE_CACHES                                                                 \
+    STRUCT_CPU_STATE_CYCLE_ACCURATE_SIMULATION_FIELDS                           \
+    LATENCY_CACHE_TAG_FIELDS                                                    \
+    LATENCY_CACHE_VAL_FIELDS                                                    \
+    LATENCY_CACHE_COUNT_FIELDS                                                  \
+    STRUCT_REG_STATS_FIELD                                                      \
+    BRANCH_PREDICTOR_STATE_FIELDS                                               \
+    uint32* xregs[GPR_BASE_REGS];                                               \
+    uint8  irq_priority[MAX_IRQ];                                               \
+    uint8  irq_trigger[MAX_IRQ];                                                \
+    uint32 irq_icause[MAX_IRQ_LEVELS];                                          \
+    uint32 irq_pending_bitset_0_31;                                             \
+    uint32 irq_pending_bitset_32_63;                                            \
+    uint32 irq_pending_bitset_64_95;                                            \
+    uint32 irq_pending_bitset_96_127;                                           \
+    uint32 irq_pending_bitset_128_159;                                          \
+    uint32 irq_pending_bitset_160_191;                                          \
+    uint32 irq_pending_bitset_192_223;                                          \
+    uint32 irq_pending_bitset_224_255;                                          \
+    uint32 irq_enabled_bitset_0_31;                                             \
+    uint32 irq_enabled_bitset_32_63;                                            \
+    uint32 irq_enabled_bitset_64_95;                                            \
+    uint32 irq_enabled_bitset_96_127;                                           \
+    uint32 irq_enabled_bitset_128_159;                                          \
+    uint32 irq_enabled_bitset_160_191;                                          \
+    uint32 irq_enabled_bitset_192_223;                                          \
+    uint32 irq_enabled_bitset_224_255;                                          \
+    uint32 irq_gprs_bank[GPR_BASE_REGS];                                        \
+  } cpuState;
+
+// -----------------------------------------------------------------------------
+
+#endif /* end of include guard: INC_SYS_CPU_STATE_DEF_ */

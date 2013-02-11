@@ -1,0 +1,2 @@
+-C /disk/home/pasta1/s0675281/SPEC2006/benchspec/CPU2006/444.namd/run/run_base_test_arcsim.0000
+-o namd.stdout -e namd.err  ../run_base_test_arcsim.0000/namd_base.arcsim -- --input namd.input --iterations 1 --output namd.out 
