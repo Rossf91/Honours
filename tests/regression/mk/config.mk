@@ -14,7 +14,7 @@ ifndef DRIVER_MDB
 
 # Using ArcSim as a driver
 ##
-SIM+=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/bin/arcsim
+SIM+=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/bin/arcsim
 SIMOPT+=--verbose --fast
 SIMARGS+=
 SIMRUNARG=-e
@@ -26,7 +26,7 @@ else
 ##
 SIM+=mdb
 SIMOPT+=-cl \
-	-dll=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib/libsim.so \
+	-dll=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib/libsim.so \
 	-prop=nsim_fast=1 \
 	-prop=nsim_isa_a6k=1 \
 	-prop=nsim_isa_div_rem_option=1 \

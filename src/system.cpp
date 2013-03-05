@@ -246,7 +246,7 @@ System::create_system ()
 
   if (   sim_opts.memory_sim
       && sys_conf.sys_arch.cache_types)
-  { // Level 3 cache is configured
+  { // Leve 3 cache is configured
     //
     if (sys_conf.sys_arch.cache_types & CacheArch::kInstCache) {
       L3_icache = new CacheModel (SYSTEM_LEVEL, CacheArch::kInstCache,
@@ -406,7 +406,6 @@ System::create_system ()
           ++total_cores;
         }
       }
-      L2_dcache->cycle_count   = &(cpu[0]->cnt_ctx.cycle_count);
       ++total_modules;
     }
   }

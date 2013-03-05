@@ -2,10 +2,10 @@
 /* inc/config.h.in.  Generated from configure.ac by autoheader.  */
 
 /* Simulator ISA file. */
-#define DEFAULT_ISA_FILE "/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/etc/encore.isa"
+#define DEFAULT_ISA_FILE "/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/etc/encore.isa"
 
 /* Simulator Architecture file. */
-#define DEFAULT_SYS_ARCH_FILE "/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/etc/encore.arc"
+#define DEFAULT_SYS_ARCH_FILE "/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/etc/encore.arc"
 
 /* Define to 1 if you have the <inttypes.h> header file. */
 #define HAVE_INTTYPES_H 1

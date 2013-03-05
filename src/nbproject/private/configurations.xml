@@ -24,20 +24,11 @@
       </nativedebugger>
       <runprofile version="9">
         <runcommandpicklist>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/eembc/memory/* "${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mytests/spec/* "${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mytests/spec/401.bzip2* "${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mytests/spec/401.bzip2/* "${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mytests/401.bzip2/* "${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mytests/* "${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mtcas-regression/trunk/bioperf/ce 
-"${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mtcas-regression/trunk/bioperf/ce/CE  "${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mytests/*  "${OUTPUT_PATH}"</runcommandpicklistitem>
-          <runcommandpicklistitem>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mytests/current/*  "${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" ./bin/arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/tests/regression/tests/mytests/current/* </runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>./arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/tests/regression/tests/mytests/current/*  "${OUTPUT_PATH}"</runcommand>
-        <rundir>/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/bin</rundir>
+        <runcommand>"${OUTPUT_PATH}" ./bin/arcsim -c -v -e /afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/tests/regression/tests/mytests/current/*</runcommand>
+        <rundir>.</rundir>
         <buildfirst>true</buildfirst>
         <terminal-type>0</terminal-type>
         <remove-instrumentation>0</remove-instrumentation>

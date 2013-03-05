@@ -181,9 +181,7 @@
                    displayName="Important Files"
                    projectFiles="false"
                    kind="IMPORTANT_FILES_FOLDER">
-      <itemPath>../inc/uarch/memory/CacheModel.h</itemPath>
       <itemPath>Makefile</itemPath>
-      <itemPath>../tests/regression/tests/mytests/current</itemPath>
       <itemPath>../etc/encore.arc</itemPath>
     </logicalFolder>
   </logicalFolder>
@@ -217,7 +215,7 @@
               <Elem>HAVE_MMX</Elem>
               <Elem>HAVE_SSE2</Elem>
               <Elem>LLVM_VERSION=29</Elem>
-              <Elem>SVN_REV=23982M</Elem>
+              <Elem>SVN_REV=24147</Elem>
               <Elem>_GNU_SOURCE</Elem>
               <Elem>__STDC_CONSTANT_MACROS</Elem>
               <Elem>__STDC_LIMIT_MACROS</Elem>
@@ -453,9 +451,6 @@
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="4">
         <ccTool>
-          <preprocessorList>
-            <Elem>SVN_REV=23982:24077M</Elem>
-          </preprocessorList>
         </ccTool>
       </item>
       <item path="mem/MemoryDevice.cpp" ex="false" tool="1" flavor2="4">
@@ -581,9 +576,6 @@
       </item>
       <item path="system.cpp" ex="false" tool="1" flavor2="4">
         <ccTool>
-          <preprocessorList>
-            <Elem>SVN_REV=23982:24077M</Elem>
-          </preprocessorList>
         </ccTool>
       </item>
       <item path="translate/TranslateBlock.cpp" ex="false" tool="1" flavor2="4">
@@ -630,9 +622,6 @@
       </item>
       <item path="trap.cpp" ex="false" tool="1" flavor2="4">
         <ccTool>
-          <preprocessorList>
-            <Elem>SVN_REV=23982:24077M</Elem>
-          </preprocessorList>
         </ccTool>
       </item>
       <item path="uarch/bpu/BranchPredictorFactory.cpp"
@@ -656,10 +645,10 @@
         <ccTool>
         </ccTool>
       </item>
-      <item path="uarch/memory/CacheModel.cpp" ex="false" tool="1" flavor2="4">
+      <item path="uarch/memory/CacheModel.cpp" ex="false" tool="1" flavor2="0">
         <ccTool>
           <preprocessorList>
-            <Elem>SVN_REV=23982:24077M</Elem>
+            <Elem>SVN_REV=24147M</Elem>
           </preprocessorList>
         </ccTool>
       </item>
@@ -681,9 +670,6 @@
       </item>
       <item path="uarch/memory/MemoryModel.cpp" ex="false" tool="1" flavor2="4">
         <ccTool>
-          <preprocessorList>
-            <Elem>SVN_REV=23982:24077M</Elem>
-          </preprocessorList>
         </ccTool>
       </item>
       <item path="uarch/memory/ScratchpadFactory.cpp" ex="false" tool="1" flavor2="4">

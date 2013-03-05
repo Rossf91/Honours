@@ -32,23 +32,23 @@ build-api: api-test ipt-api-test ipt-api-test-about-to-execute ipt-api-test-begi
 
 api-test: api-test.c
 	@echo "== Building Test Harness '$@' for simulation API - $^ "
-	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib -lsim $^ -o $@
+	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib -lsim $^ -o $@
 
 ipt-api-test: ipt-api-test.c
 	@echo "== Building Test Harness '$@' for IPT simulation API"
-	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib -lsim $^ -o $@
+	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib -lsim $^ -o $@
 
 ipt-api-test-begin-instr-exec: ipt-api-test-begin-instr-exec.c
 	@echo "== Building Test Harness '$@' for IPT simulation API"
-	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib -lsim $^ -o $@
+	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib -lsim $^ -o $@
 
 ipt-api-test-about-to-execute: ipt-api-test-about-to-execute.c
 	@echo "== Building Test Harness '$@' for IPT simulation API"
-	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib -lsim $^ -o $@
+	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib -lsim $^ -o $@
 
 ipt-api-test-begin-basic-block-execute: ipt-api-test-begin-basic-block-exec.c
 	@echo "== Building Test Harness '$@' for IPT simulation API"
-	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib -lsim $^ -o $@
+	gcc -I/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/inc -L/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib -lsim $^ -o $@
 
 
 #--------------------------------------------------------------------------------
@@ -62,8 +62,8 @@ test-default-api: api-test
 		EXPECTED=`echo "$$t" | awk 'BEGIN {FS=":"} {print $$2}'`;                   \
 		FAILORWARN=`echo "$$t" | awk 'BEGIN {FS=":"} {print $$3}'`;                 \
 		if test "X$$FAILORWARN" = "XW"; then MESSAGE="WARNING"; else MESSAGE="FAILED"; fi;\
-		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
-		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
+		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
+		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
 			./$< -e $$TEST &> $$TEST.log;                                             \
 		RESULT=`awk '/^Total instructions/ {print $$4}' $$TEST.log`;                \
 		if test "X$$EXPECTED" = "X$$RESULT";                                        \
@@ -85,8 +85,8 @@ test-default-ipt-api: ipt-api-test ipt-api-test-about-to-execute ipt-api-test-be
 		IPTEXPECTED=`echo "$$t" | awk 'BEGIN {FS=":"} {print $$2}'`;                \
 		FAILORWARN=`echo "$$t" | awk 'BEGIN {FS=":"} {print $$3}'`;                 \
 		if test "X$$FAILORWARN" = "XW"; then MESSAGE="WARNING"; else MESSAGE="FAILED"; fi;\
-		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
-		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
+		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
+		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
 			./ipt-api-test -e $$TEST &> $$TEST.log;                                   \
 		IPTRESULT=`awk '/^Executed Instrumentation PoinTs:/ {print $$4}' $$TEST.log`;\
 		if test "X$$IPTEXPECTED" = "X$$IPTRESULT";                                 \
@@ -101,8 +101,8 @@ test-default-ipt-api: ipt-api-test ipt-api-test-about-to-execute ipt-api-test-be
 		IPTEXPECTED=`echo "$$t" | awk 'BEGIN {FS=":"} {print $$2}'`;                \
 		FAILORWARN=`echo "$$t" | awk 'BEGIN {FS=":"} {print $$3}'`;                 \
 		if test "X$$FAILORWARN" = "XW"; then MESSAGE="WARNING"; else MESSAGE="FAILED"; fi;\
-		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
-		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
+		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
+		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
 			./ipt-api-test-about-to-execute -e $$TEST &> $$TEST.log;                  \
 		IPTRESULT=`awk '/^Executed Instrumentation PoinTs:/ {print $$4}' $$TEST.log`;\
 		if test "X$$IPTEXPECTED" = "X$$IPTRESULT";                                 \
@@ -115,8 +115,8 @@ test-default-ipt-api: ipt-api-test ipt-api-test-about-to-execute ipt-api-test-be
 	@for t in ${API_IPT_API_TEST_BEGIN_INSTR_EXEC}; do                            \
 		TEST=`echo "$$t" | awk 'BEGIN {FS=":"} {print $$1}'`;                       \
 		if test "X$$FAILORWARN" = "XW"; then MESSAGE="WARNING"; else MESSAGE="FAILED"; fi;\
-		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
-		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
+		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
+		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
 			./ipt-api-test-begin-instr-exec -e $$TEST &> $$TEST.log;                  \
 		OUTCOME=`echo $$?`; \
 		if test "X$$OUTCOME" = "X0";                                 \
@@ -129,8 +129,8 @@ test-default-ipt-api: ipt-api-test ipt-api-test-about-to-execute ipt-api-test-be
 	@for t in ${API_IPT_API_TEST_BEGIN_BASIC_BLOCK_EXEC}; do                            \
 		TEST=`echo "$$t" | awk 'BEGIN {FS=":"} {print $$1}'`;                       \
 		if test "X$$FAILORWARN" = "XW"; then MESSAGE="WARNING"; else MESSAGE="FAILED"; fi;\
-		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
-		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib  \
+		LD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
+		DYLD_LIBRARY_PATH=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib  \
 			./ipt-api-test-begin-basic-block-execute -e $$TEST &> $$TEST.log;                  \
 		OUTCOME=`echo $$?`; \
 		if test "X$$OUTCOME" = "X0";                                 \

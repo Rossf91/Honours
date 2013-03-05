@@ -220,8 +220,8 @@ OBJS = $(SIM_OBJS) main.o
 # TARGET NAMES
 # ------------------------------------------------------------------------------
 
-BIN_TGT_DIR=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/bin
-LIB_TGT_DIR=/afs/inf.ed.ac.uk/user/s09/s0903605/Documents/trunk/lib
+BIN_TGT_DIR=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/bin
+LIB_TGT_DIR=/afs/inf.ed.ac.uk/user/s09/s0903605/Downloads/trunk/lib
 
 EXE    = ${BIN_TGT_DIR}/$(MODULE)
 

@@ -130,14 +130,9 @@
 ##        <replacement policy> <higher bus width (bits)> <latency (cycles)>
 ##        <higher bus clock divisor>
 #
-#default cache sizes
-#CACHE    32k_8w_l1_I  32768 5 8 R 32 1 1
-#CACHE    32k_4w_l1_D  32768 5 4 R 32 1 1
-#
-#test cache sizes
-CACHE    32k_8w_l1_I   256 5 1 R 32 1 1
-CACHE    32k_4w_l1_D   256 5 1 R 32 1 1
-CACHE    L2U           512 5 1 R 32 1 1
+CACHE    32k_8w_l1_I  32768 5 8 R 32 1 1
+CACHE    32k_4w_l1_D  32768 5 4 R 32 1 1
+CACHE    L2  256 5 1 R 32 1 1
 
 ### Closely Coupled Memory Definition ------------------------------------------
 ## CCM  <CCM name> <start address> <size (Bytes)> <data bus width (bits)> <latency (cycles)>
@@ -179,7 +174,7 @@ ADD_MMU       mmu
 #
 MODULE       EC5_Castle32k_module
 ADD_CORE     EC5_Castle32k_core 1
-ADD_CACHE    L2U U
+#ADD_CACHE L2 U
 
 ## System section (level 3)
 #  SYSTEM     <system name> <master clock freq (MHz)> <mem start address>

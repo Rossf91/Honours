@@ -595,6 +595,7 @@ CacheModel::get_write_hits()
     case CacheArch::kUnifiedCache: {
       if (memory_model) {
         value =   memory_model->latency_cache.get_write_hits();
+                //+ memory_model->latency_cache.get_fetch_hits();
       }
       value += write_hits;
       break;
